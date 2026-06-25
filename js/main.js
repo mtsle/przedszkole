@@ -27,7 +27,8 @@
     const hint = document.getElementById('introHint');
     const introBg = document.getElementById('introBg');
     const headerLogo = document.querySelector('.brand__img');
-    if (prefersReduced || !headerLogo || !logo) { intro.remove(); return; }
+    // Na telefonach pomijamy intro — od razu treść (szybszy start)
+    if (prefersReduced || !headerLogo || !logo || window.matchMedia('(max-width: 760px)').matches) { intro.remove(); return; }
 
     document.body.classList.add('js-intro', 'intro-active');
     let w0 = 1, done = false, idleTimer = null, idleRAF = 0;
@@ -294,12 +295,21 @@
   const gWrap = document.getElementById('jgallery');
   if (gWrap && Array.isArray(window.GALLERY) && window.GALLERY.length) {
     const DATA = window.GALLERY;
+    // Alt dla galerii: jeśli jest podpis (cap) — użyj go; w przeciwnym razie opis wg kategorii (a11y + SEO).
+    const CAT_ALT = {
+      sale: 'Wnętrze przestronnej, jasnej sali w przedszkolu Czarodziejski Dworek',
+      zajecia: 'Dzieci podczas zajęć w przedszkolu językowo-muzycznym Czarodziejski Dworek',
+      plac: 'Plac zabaw w ogrodzie przedszkola Czarodziejski Dworek',
+      warsztaty: 'Warsztaty twórcze dla dzieci w przedszkolu Czarodziejski Dworek',
+      wycieczki: 'Wycieczka przedszkolaków z Czarodziejskiego Dworku'
+    };
+    const galAlt = (d) => d.cap || CAT_ALT[d.cat] || 'Zdjęcie z przedszkola Czarodziejski Dworek';
     const lb = buildLightbox();
     const GAP = 10;
     let current = DATA, entranceIO = null;
     const targetRow = () => (window.innerWidth <= 640 ? 150 : 240);
 
-    const lbItems = () => current.map((d) => ({ src: d.src, thumb: d.thumb, alt: d.cap || '', cap: d.cap || '' }));
+    const lbItems = () => current.map((d) => ({ src: d.src, thumb: d.thumb, alt: galAlt(d), cap: d.cap || '' }));
 
     const layout = () => {
       const W = gWrap.clientWidth;
@@ -350,10 +360,10 @@
         fig.dataset.ar = (it.w / it.h).toFixed(4);
         fig.setAttribute('role', 'button');
         fig.setAttribute('tabindex', '0');
-        fig.setAttribute('aria-label', it.cap ? ('Powiększ: ' + it.cap) : 'Powiększ zdjęcie');
+        fig.setAttribute('aria-label', 'Powiększ: ' + galAlt(it));
         const im = document.createElement('img');
         im.loading = 'lazy'; im.decoding = 'async';
-        im.src = it.thumb || it.src; im.alt = it.cap || '';
+        im.src = it.thumb || it.src; im.alt = galAlt(it);
         im.width = it.w; im.height = it.h;
         fig.appendChild(im);
         if (it.cap) { const fc = document.createElement('figcaption'); fc.textContent = it.cap; fig.appendChild(fc); }
@@ -958,5 +968,23 @@
       }, { threshold: 0 });
       io.observe(hero);
     }
+  })();
+
+  /* ---- Mobilny pasek szybkiego kontaktu: Zadzwoń + Zapisz (tylko telefon, CSS) ---- */
+  (function () {
+    if (document.querySelector('.mobile-cta')) return;
+    const bar = document.createElement('nav');
+    bar.className = 'mobile-cta';
+    bar.setAttribute('aria-label', 'Szybki kontakt');
+    bar.innerHTML =
+      '<a class="mobile-cta__btn mobile-cta__btn--call" href="tel:+48690629501">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg>' +
+        '<span>Zadzwoń</span>' +
+      '</a>' +
+      '<a class="mobile-cta__btn mobile-cta__btn--signup" href="kontakt.html">' +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg>' +
+        '<span>Zapisz dziecko</span>' +
+      '</a>';
+    document.body.appendChild(bar);
   })();
 })();

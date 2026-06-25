@@ -1,0 +1,18 @@
+/*
+Theme Name: Czarodziejski Dworek
+Theme URI: https://www.czarodziejski-dworek.pl/
+Author: Czarodziejski Dworek
+Author URI: https://www.czarodziejski-dworek.pl/
+Description: Klasyczny, produkcyjny motyw WordPress dla Integracyjnego Przedszkola Niepublicznego Językowo-Muzycznego „Czarodziejski Dworek". Styl claymorphism, w pełni edytowalny przez wp-admin (treści + ACF). Wygląd odwzorowany 1:1 z projektu HTML.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: czarodziejski-dworek
+Tags: education, custom-menu, featured-images, translation-ready, custom-logo
+
+  Uwaga: właściwe style znajdują się w pliku /css/style.css (podpinany przez wp_enqueue_scripts
+  w functions.php). Ten plik zawiera wyłącznie wymagany przez WordPress nagłówek motywu.
+*/

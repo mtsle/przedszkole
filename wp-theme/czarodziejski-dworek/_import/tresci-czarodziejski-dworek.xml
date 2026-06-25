@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Import treści motywu „Czarodziejski Dworek": 7 wpisów bloga + strony.
+     Narzędzia → Importuj → WordPress. Obrazy w treści wskazują na pliki motywu
+     (ścieżki root-relative), więc działają na każdej domenie po wgraniu motywu. -->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Czarodziejski Dworek</title>
+	<link>https://www.czarodziejski-dworek.pl</link>
+	<description>Integracyjne Przedszkole Niepubliczne Językowo-Muzyczne</description>
+	<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+	<language>pl-PL</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	<wp:base_site_url>https://www.czarodziejski-dworek.pl</wp:base_site_url>
+	<wp:base_blog_url>https://www.czarodziejski-dworek.pl</wp:base_blog_url>
+	<wp:author>
+		<wp:author_id>1</wp:author_id>
+		<wp:author_login><![CDATA[admin]]></wp:author_login>
+		<wp:author_email><![CDATA[kontakt@czarodziejski-dworek.pl]]></wp:author_email>
+		<wp:author_display_name><![CDATA[Czarodziejski Dworek]]></wp:author_display_name>
+		<wp:author_first_name></wp:author_first_name>
+		<wp:author_last_name></wp:author_last_name>
+	</wp:author>
+	<wp:category>
+		<wp:term_id>11</wp:term_id>
+		<wp:category_nicename><![CDATA[aktualnosci]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Aktualności]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>12</wp:term_id>
+		<wp:category_nicename><![CDATA[wydarzenia]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Wydarzenia]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>13</wp:term_id>
+		<wp:category_nicename><![CDATA[rozwoj]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Rozwój dziecka]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>14</wp:term_id>
+		<wp:category_nicename><![CDATA[jezykowe]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Zajęcia językowe]]></wp:cat_name>
+	</wp:category>
+	<wp:category>
+		<wp:term_id>15</wp:term_id>
+		<wp:category_nicename><![CDATA[zycie]]></wp:category_nicename>
+		<wp:category_parent><![CDATA[]]></wp:category_parent>
+		<wp:cat_name><![CDATA[Życie przedszkola]]></wp:cat_name>
+	</wp:category>
+	<item>
+		<title><![CDATA[Dzień otwarty!]]></title>
+		<link>/dzien-otwarty-2025/</link>
+		<pubDate>Wed, 08 Jan 2025 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-dzien-otwarty-2025</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/dzien-otwarty-2025.webp" alt="Plakat: Dzień otwarty w przedszkolu Czarodziejski Dworek" width="517" height="321">
+<p>Szukasz dobrego przedszkola na warszawskiej Woli? 🧐 Zapraszamy do Czarodziejskiego Dworku! 🏰</p>
+        <p>Mieścimy się przy ulicy Górczewskiej 89 — 400 metrów od stacji metra Księcia Janusza, naprzeciwko parku Moczydło. Naszą placówkę założyliśmy we wrześniu 2003 roku.</p>
+        <p>Prowadzimy rekrutację dzieci z rocznika 2023 i serdecznie zapraszamy zainteresowane rodziny na dzień otwarty — poznacie nasze sale, ogród i zespół, a dzieci będą mogły pobawić się na miejscu.</p>
+        <div class="article-info">
+          <p><strong>Kiedy:</strong> sobota 28.02.2026, w godzinach 10:00–12:30.</p>
+          <p><strong>Gdzie:</strong> ul. Górczewska 89, 01-401 Warszawa (Wola).</p>
+          <p><strong>Dla kogo:</strong> dzieci z rocznika 2023 wraz z rodzicami.</p>
+        </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Szukasz dobrego przedszkola na warszawskiej Woli? Zapraszamy na dzień otwarty — poznaj Czarodziejski Dworek i zapisz dziecko (rocznik 2023).]]></excerpt:encoded>
+		<wp:post_id>101</wp:post_id>
+		<wp:post_date><![CDATA[2025-01-08 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2025-01-08 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[dzien-otwarty-2025]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="aktualnosci"><![CDATA[Aktualności]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Bierzemy udział w programie „Szkoła Myślenia Pozytywnego”!]]></title>
+		<link>/szkola-myslenia-pozytywnego/</link>
+		<pubDate>Thu, 26 Sep 2024 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-szkola-myslenia-pozytywnego</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/szkola-myslenia.webp" alt="Grafika programu Szkoła Myślenia Pozytywnego" width="1170" height="650">
+<p>Szkoła Myślenia Pozytywnego to roczna przygoda pełna wrażeń, empatii, zrozumienia i pracy nad otwartością, holistycznym dbaniem o zdrowie — o siebie i o otoczenie.</p>
+        <p>W czasie trwania programu wspólnie przechodzimy przez różnorodne aspekty wpływające na zdrowie psychiczne — zarówno dzieci i młodzieży, jak i osób dorosłych z ich otoczenia. Uczymy się, jak dbać o samych siebie i o innych, zmieniamy naszą rzeczywistość tak, aby wspierała w nas dobrostan psychiczny, motywowała do edukacji i pozytywnej komunikacji oraz uczyła, jak radzić sobie ze stresem i lękiem.</p>
+        <p>Więcej o programie: <a class="inline-link" href="https://programsmp.pl/" target="_blank" rel="noopener">programsmp.pl</a>.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Roczna przygoda o dbaniu o zdrowie psychiczne, empatię i pozytywną komunikację — dla dzieci i dorosłych z ich otoczenia.]]></excerpt:encoded>
+		<wp:post_id>102</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-26 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-26 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[szkola-myslenia-pozytywnego]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="rozwoj"><![CDATA[Rozwój dziecka]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Zajęcia z języka angielskiego – wrzesień 2024]]></title>
+		<link>/angielski-wrzesien-2024/</link>
+		<pubDate>Mon, 02 Sep 2024 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-angielski-wrzesien-2024</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/angielski.webp" alt="Flaga i mapa Wielkiej Brytanii — zajęcia z języka angielskiego w przedszkolu" width="640" height="640">
+<p>Publikujemy rozkłady i materiały do zajęć z języka angielskiego na wrzesień 2024 — dla wszystkich grup: Białej, Czerwonej, Fioletowej i Niebieskiej.</p>
+        <p>Materiały pomagają utrwalać słownictwo i piosenki poznawane na zajęciach również w domu, wspólnie z rodzicami.</p>
+        <div class="article-info">
+          <p><strong>Materiały do pobrania</strong> (rozkłady dla poszczególnych grup) dostępne są w oryginalnym wpisie:</p>
+          <p><a class="inline-link" href="https://www.czarodziejski-dworek.pl/2024/09/zajecia-z-jezyka-angielskiego-wrzesien-2024/" target="_blank" rel="noopener">Pobierz materiały — wrzesień 2024 →</a></p>
+        </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Rozkłady i materiały do zajęć z angielskiego dla grup: Białej, Czerwonej, Fioletowej i Niebieskiej.]]></excerpt:encoded>
+		<wp:post_id>103</wp:post_id>
+		<wp:post_date><![CDATA[2024-09-02 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-09-02 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[angielski-wrzesien-2024]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="jezykowe"><![CDATA[Zajęcia językowe]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Czarodziejski Piknik Jubileuszowy!]]></title>
+		<link>/piknik-jubileuszowy/</link>
+		<pubDate>Wed, 22 May 2024 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-piknik-jubileuszowy</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/piknik.webp" alt="Plakat Czarodziejskiego Pikniku Jubileuszowego — 20 lat przedszkola" width="1170" height="650">
+<p>Serdecznie zapraszamy naszych absolwentów na piknik z okazji 20-lecia Przedszkola „Czarodziejski Dworek”! To wyjątkowy moment, który chcemy świętować razem z Wami — naszymi przedszkolakami, absolwentami, ich rodzinami oraz wszystkimi przyjaciółmi przedszkola.</p>
+        <div class="article-info">
+          <p><strong>Kiedy:</strong> sobota, 25 maja 2024 r., w godzinach 11:30–14:30.</p>
+          <p><strong>Gdzie:</strong> Centrum Attis — teren zielony obok placu zabaw (ul. Górczewska 89, 01-401 Warszawa).</p>
+        </div>
+        <h2>Co nas czeka?</h2>
+        <ul class="dotted">
+          <li>🌼 Galeria wspomnień</li>
+          <li>🌼 Występy artystyczne</li>
+          <li>🌼 Owoce i pyszne słodkie przekąski</li>
+          <li>🌼 Warsztaty plastyczne dla małych i większych</li>
+          <li>🌼 Strefa relaksu</li>
+        </ul>
+        <p>Podczas tego czarodziejskiego dla nas dnia przyda się sportowe obuwie i dobry humor! Zapewniamy mnóstwo atrakcji oraz niezapomniane wspomnienia.</p>
+        <p>Nie zapomnijcie poinformować nas o swojej obecności, klikając „wezmę udział” w wydarzeniu na Facebooku, telefonicznie bądź mailowo.</p>
+        <p>Do zobaczenia na pikniku, gdzie wspólnie będziemy świętować te wspaniałe 20 lat!</p>
+        <p><em>Pielęgnując dobre wspomnienia, twórzmy kolejne magiczne chwile!</em><br>Zespół Przedszkola „Czarodziejski Dworek”</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Świętowaliśmy 20-lecie przedszkola — galeria wspomnień, występy artystyczne, warsztaty i strefa relaksu dla absolwentów i ich rodzin.]]></excerpt:encoded>
+		<wp:post_id>104</wp:post_id>
+		<wp:post_date><![CDATA[2024-05-22 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-05-22 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[piknik-jubileuszowy]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="wydarzenia"><![CDATA[Wydarzenia]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Dzień Otwarty!]]></title>
+		<link>/dzien-otwarty-2024/</link>
+		<pubDate>Thu, 14 Mar 2024 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-dzien-otwarty-2024</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/dzien-otwarty-2024.webp" alt="Dzień otwarty w przedszkolu Czarodziejski Dworek" width="1170" height="650">
+<p>Szukasz dobrego przedszkola na warszawskiej Woli? 🧐 Zatem zapraszamy do Czarodziejskiego Dworku! 🏰</p>
+        <p>Mieścimy się przy ulicy Górczewskiej 89 — 400 metrów od stacji metra Księcia Janusza, naprzeciwko parku Moczydło. Nasza placówka została założona we wrześniu 2003 roku.</p>
+        <p>Czarodziejski Dworek to przedszkole, w którym odkrywamy i doceniamy mocne strony Twojego dziecka. Innymi słowy — u nas nie sposób się nudzić 🙂</p>
+        <p>Angielski, francuski, muzyka, robotyka, taniec i basen to tylko niektóre z zajęć dostępnych dla naszych przedszkolaków. Spokojnie — jest też czas na zabawę ⚽️</p>
+        <p>Wszystkim zajmuje się nasza profesjonalna kadra — pełna pasji, cierpliwości i przede wszystkim ciepła! 😍 Na koniec warto dodać, że posiadamy duży ogród z placem zabaw tuż obok parku Szymańskiego.</p>
+        <div class="article-info">
+          <p><strong>Dzień otwarty:</strong> sobota 23.03.2024, w godzinach 10:00–12:30.</p>
+        </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Angielski, francuski, muzyka, robotyka, taniec i basen — zobacz, jak wygląda dzień w Czarodziejskim Dworku.]]></excerpt:encoded>
+		<wp:post_id>105</wp:post_id>
+		<wp:post_date><![CDATA[2024-03-14 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-03-14 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[dzien-otwarty-2024]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="wydarzenia"><![CDATA[Wydarzenia]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Zajęcia z języka francuskiego – grudzień 2023]]></title>
+		<link>/francuski-grudzien-2023/</link>
+		<pubDate>Thu, 30 Nov 2023 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-francuski-grudzien-2023</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/francuski.webp" alt="Flaga i mapa Francji — zajęcia z języka francuskiego w przedszkolu" width="507" height="520">
+<p>W grudniu na zajęciach z języka francuskiego śpiewamy piosenkę „L’as-tu vu ce petit bonhomme” oraz poznajemy bajki „La moufle” i „Aboie, Georges!”.</p>
+        <p>Poniżej udostępniamy materiały, dzięki którym dzieci mogą utrwalać francuskie słówka i melodie także w domu.</p>
+        <div class="article-info">
+          <p><strong>Materiały do pobrania</strong> dostępne są w oryginalnym wpisie:</p>
+          <p><a class="inline-link" href="https://www.czarodziejski-dworek.pl/2023/11/zajecia-z-jezyka-francuskiego-grudzien-2023/" target="_blank" rel="noopener">Pobierz materiały — grudzień 2023 →</a></p>
+        </div>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Piosenka „L’as-tu vu ce petit bonhomme” oraz bajki „La moufle” i „Aboie, Georges!” — materiały do zajęć z francuskiego.]]></excerpt:encoded>
+		<wp:post_id>106</wp:post_id>
+		<wp:post_date><![CDATA[2023-11-30 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-11-30 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[francuski-grudzien-2023]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="jezykowe"><![CDATA[Zajęcia językowe]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Dni wolne i uroczystości 2023/2024]]></title>
+		<link>/dni-wolne-2023-2024/</link>
+		<pubDate>Mon, 04 Sep 2023 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-post-dni-wolne-2023-2024</guid>
+		<description></description>
+		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/dni-wolne.webp" alt="Kalendarz dni wolnych i uroczystości 2023/2024" width="725" height="1024">
+<p>Poniżej publikujemy kalendarz dni wolnych oraz przedszkolnych uroczystości w roku szkolnym 2023/2024. Prosimy rodziców o zapoznanie się z terminami i zaplanowanie opieki w dni wolne.</p>]]></content:encoded>
+		<excerpt:encoded><![CDATA[Kalendarz dni wolnych i przedszkolnych uroczystości w roku szkolnym 2023/2024.]]></excerpt:encoded>
+		<wp:post_id>107</wp:post_id>
+		<wp:post_date><![CDATA[2023-09-04 10:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2023-09-04 10:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[dni-wolne-2023-2024]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[post]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<category domain="category" nicename="zycie"><![CDATA[Życie przedszkola]]></category>
+	</item>
+	<item>
+		<title><![CDATA[Strona główna]]></title>
+		<link>/strona-glowna/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-strona-glowna</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>108</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[strona-glowna]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[O nas]]></title>
+		<link>/o-nas/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-o-nas</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>109</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[o-nas]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>1</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Program]]></title>
+		<link>/oferta/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-oferta</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>110</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[oferta]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Kadra]]></title>
+		<link>/kadra/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-kadra</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>111</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kadra]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[WWR i terapia]]></title>
+		<link>/wsparcie/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-wsparcie</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>112</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[wsparcie]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>4</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Galeria]]></title>
+		<link>/galeria/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-galeria</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>113</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[galeria]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>5</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Blog]]></title>
+		<link>/blog/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-blog</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>114</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[blog]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>6</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Kontakt]]></title>
+		<link>/kontakt/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-kontakt</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>115</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kontakt]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>7</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Polityka prywatności]]></title>
+		<link>/polityka-prywatnosci/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-page-polityka-prywatnosci</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>116</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[polityka-prywatnosci]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>8</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+	</item>
+	<item>
+		<title><![CDATA[Agnieszka Mering]]></title>
+		<link>/kadra-osoba/mering/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-mering</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>117</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mering]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>10</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Dyrektor, pedagog, nauczyciel wychowania przedszkolnego]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[dyrekcja]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Założycielka i dyrektorka Przedszkola „Czarodziejski Dworek" od 2003 r.
+Absolwentka Wydziału Pedagogicznego Uniwersytetu Warszawskiego — Edukacja Przedszkolna (2005) oraz Polityka i zarządzanie oświatą (2008).
+Absolwentka Wyższej Szkoły Humanistycznej w Pułtusku — Zintegrowana Edukacja Początkowa z terapią pedagogiczną (2003) oraz Doradztwo, Opieka i Pomoc Społeczna (2002).
+Absolwentka Wyższej Szkoły Nauk Społecznych w Warszawie — Edukacja dla bezpieczeństwa (2011).
+Prywatnie mama dwóch nastolatek, uwielbiająca taniec i podróże.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[mering.png]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Małgorzata Bartoszewska]]></title>
+		<link>/kadra-osoba/bartoszewska/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-bartoszewska</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>118</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[bartoszewska]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>20</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog, terapeuta]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Ukończyła studia magisterskie z Pedagogiki Przedszkolnej z terapią pedagogiczną oraz podyplomowe Zarządzanie i Marketing w Oświacie.
+Uczestniczka wielu kursów i szkoleń, m.in. rocznego kursu Marii Montessori oraz kursu Dramy.
+Posiada wieloletnie doświadczenie w pracy z dziećmi w wieku szkolnym i przedszkolnym.
+Podąża za myślą Konfucjusza: „Powiedz mi a zapomnę! Pokaż mi a zapamiętam! Pozwól mi działać — a zrozumiem i rozwinę skrzydła".
+W wolnych chwilach jeździ na rowerze, spędza czas z przyjaciółmi i czyta literaturę kryminalną.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[bartoszewska.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Paulina Chłap]]></title>
+		<link>/kadra-osoba/chlap/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-chlap</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>119</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[chlap]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>30</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny, nauczyciel wychowania przedszkolnego]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Ukończyła studia o specjalności integracyjne wychowanie przedszkolne i wczesna interwencja na Akademii Pedagogiki Specjalnej.
+Pracowała z dziećmi z autyzmem w Fundacji Synapsis — prowadziła zajęcia indywidualne i grupowe.
+Uczestniczka szkoleń z komunikacji funkcjonalnej (PECS, Makaton) oraz wspierania rozwoju i radzenia sobie z zachowaniami trudnymi.
+W Czarodziejskim Dworku pracuje od 2013 r. jako nauczyciel wychowania przedszkolnego i pedagog specjalny.
+Prywatnie lubi czytanie, taniec i wycieczki rowerowe.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[chlap.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Ewelina Gomoła-Bieniek]]></title>
+		<link>/kadra-osoba/gomola/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-gomola</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>120</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[gomola]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>40</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Nauczyciel wychowania przedszkolnego, pedagog specjalny]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka APS w Warszawie i Uniwersytetu Śląskiego w Katowicach.
+Z przedszkolem „Czarodziejski Dworek" związana od 2013 roku jako nauczyciel i terapeuta.
+Prowadzi indywidualne zajęcia pedagogiczne, TUS-y oraz jogę dla dzieci.
+Ma bogate doświadczenie w pracy z dziećmi i młodzieżą, również z diagnozą ASD, oraz w warsztatach (współpraca z WSR w Warszawie i Fundacją Artonomia).
+Systematycznie podnosi kwalifikacje (m.in. Jogopedia, NVC, Kids’ Skills, regulacja emocji).
+Po pracy ćwiczy jogę, tańczy salsę kubańską i zwiedza świat.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[gomola.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Olga Jakuć]]></title>
+		<link>/kadra-osoba/jakuc/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-jakuc</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>121</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jakuc]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>50</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny, terapeuta]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny, wczesnoszkolny i przedszkolny; duże doświadczenie w pracy z dziećmi ze spektrum autyzmu.
+W przedszkolu prowadzi zajęcia integracji sensorycznej, terapię ręki, treningi umiejętności społecznych oraz zajęcia taneczne.
+Ukończyła m.in. szkolenia „Pozytywna dyscyplina" oraz „Jak mówić, żeby dzieci nas słuchały…".
+W pracy daleka od systemu kar i nagród — stawia na poczucie bezpieczeństwa, zaufanie i budowanie więzi z dzieckiem.
+Prywatnie mama Aleksa; lubi podróże, rower, tenis, książki i pieczenie ciast.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[jakuc.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Anna Jurska]]></title>
+		<link>/kadra-osoba/jurska/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-jurska</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>122</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[jurska]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>60</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog, oligofrenopedagog, terapeuta SI]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Ukończyła kurs „Autyzm: małe dziecko — duża sprawa" (Fundacja Synapsis) oraz szkolenia PECS, Trening Umiejętności Społecznych i Weroniki Sherborne.
+Jest terapeutą integracji sensorycznej.
+Pracowała z dziećmi w przedszkolu terapeutycznym Fundacji Synapsis.
+Z Czarodziejskim Dworkiem związana od 2015 r.
+Prywatnie szczęśliwa mama małego Tadzia; lubi rower, gotowanie, książki, podróże i socjologię.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[jurska.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Elwira Kucharczyk]]></title>
+		<link>/kadra-osoba/kucharczyk/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-kucharczyk</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>123</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kucharczyk]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>70</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Psycholog, terapeuta]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Psycholog z przygotowaniem pedagogicznym i terapeuta.
+Ukończyła magisterskie studia psychologiczne na Uniwersytecie SWPS.
+Od 2009 roku pracuje z dziećmi z zaburzeniami ze spektrum autyzmu.
+Doświadczenie zdobywała jako terapeuta indywidualny i grupowy w przedszkolu terapeutycznym.
+Uczestniczka licznych szkoleń i konferencji (m.in. zachowania trudne, PECS — I poziom, trening kompetencji społecznych).]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Agnieszka Mazur]]></title>
+		<link>/kadra-osoba/mazur/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-mazur</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>124</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[mazur]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>80</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny, nauczyciel, terapeuta SI]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny, nauczyciel wychowania przedszkolnego oraz terapeuta Integracji Sensorycznej.
+Ukończyła Pedagogikę Specjalną (APS im. M. Grzegorzewskiej), podyplomową Pedagogikę Korekcyjną oraz Pedagogikę Przedszkolną (WSP ZNP).
+Ukończyła kursy: Diagnoza i Terapia Integracji Sensorycznej, korektywa i kompensacja wad postawy, terapia ręki i stopy, Integracja Bilateralna.
+W „Czarodziejskim Dworku" pracuje od 2007 roku.
+W pracy kładzie nacisk na różnorodne formy aktywności ruchowej — uważa, że ruch to motor rozwoju dziecka.
+Jej pasja to ruch: taniec, rower, rolki, pływanie, spacery z psem; lubi też podróże i gry planszowe.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Monika Sawczuk]]></title>
+		<link>/kadra-osoba/sawczuk/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-sawczuk</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>125</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[sawczuk]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>90</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Nauczyciel wychowania przedszkolnego]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka WSP ZNP w Warszawie — wychowanie wczesnoszkolne z językiem angielskim; ukończyła wiele szkoleń.
+Z przedszkolem „Czarodziejski Dworek" związana od 2015 roku.
+Najważniejsze jest dla niej, by każde dziecko czuło się przy niej bezpieczne i szczęśliwe.
+Zawód nauczyciela wybrała z zamiłowania do pracy z dziećmi — i nie zamieniłaby go na żaden inny.
+W wolnym czasie czyta, słucha muzyki, podróżuje i jeździ rowerem.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[sawczuk.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Natalia Łucka]]></title>
+		<link>/kadra-osoba/lucka/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-lucka</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>126</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[lucka]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>100</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Pedagog specjalny]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[nauczyciele]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka studiów magisterskich na APS im. M. Grzegorzewskiej — pedagogika specjalna.
+Doświadczenie zdobywała w szkole podstawowej (klasy 1–3), wspierając dzieci ze spektrum autyzmu i ich rodziny.
+Ukończyła kursy m.in. terapii ręki z grafomotoryką, komunikacji AAC, pracy z dzieckiem z ADHD oraz terapii dziecka z autyzmem.
+Prowadzi zajęcia dydaktyczne w grupie oraz indywidualne zajęcia terapeutyczne w atmosferze spokoju i akceptacji.
+Uważa, że każde dziecko ma niepowtarzalny potencjał, który warto odkrywać i rozwijać.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[lucka.jpg]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Monika Szymańska-Klimowicz]]></title>
+		<link>/kadra-osoba/szymanska/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-szymanska</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>127</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[szymanska]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>110</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Lektor języka angielskiego]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[lektorzy]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka Wydziału Polonistyki oraz Instytutu Romanistyki Uniwersytetu Warszawskiego.
+Posiada certyfikat języka angielskiego na poziomie C1.
+Doświadczenie w pracy z dziećmi zdobywa od pierwszego roku studiów.
+Wyspecjalizowana w pracy z uczniami o specjalnych potrzebach edukacyjnych.
+Chętnie przełamuje stereotypowe podejście do nauczania języków.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[szymanska.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Olga Czarnecka]]></title>
+		<link>/kadra-osoba/czarnecka/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-czarnecka</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>128</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[czarnecka]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>120</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Lektor języka francuskiego]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[lektorzy]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Nauczycielka języka francuskiego od 2004 roku.
+Absolwentka filologii romańskiej Uniwersytetu Warszawskiego.
+Język francuski zna od najmłodszych lat — jako dziecko chodziła do szkoły francuskiej.
+Egzaminatorka DELF; pracuje też w szkole podstawowej i Instytucie Francuskim.
+Uczy dzieci przez gry, zabawy ruchowe i piosenki.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[czarnecka.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Anna Maliga-Poprawska]]></title>
+		<link>/kadra-osoba/maliga/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-maliga</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>129</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[maliga]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>130</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Rytmika i muzyka]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[lektorzy]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka (2003) Akademii Muzycznej im. F. Chopina w Warszawie — Edukacja Muzyczna, specjalność Rytmika.
+Ukończyła Studium Wychowania Muzycznego Carla Orffa oraz liczne kursy orffowskie w kraju i za granicą (Salzburg, Nitra, Pilzno).
+Członkini Polskiego Towarzystwa Carla Orffa.
+Od 1998 roku uczy rytmiki i umuzykalnienia w szkołach i przedszkolach.
+Łączy metody Orffa, Dalcroze’a i Gordona — gra na fortepianie, śpiewa, tańczy i komponuje piosenki.
+Miłośniczka Tai Chi, gry na djembe oraz psów rasy posokowiec bawarski.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[maliga.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Joanna Golec]]></title>
+		<link>/kadra-osoba/golec/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-golec</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>130</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[golec]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>140</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Psycholog]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[specjalisci]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka Psychologii (UMCS w Lublinie), specjalność Psychologia Kliniczna.
+Od ponad 10 lat pracuje z dziećmi w spektrum autyzmu i ich rodzinami.
+Doświadczenie zdobywała m.in. w Przedszkolu Terapeutycznym Fundacji SYNAPSIS i w Centrum Terapii Simuli (terapia indywidualna, TUS).
+Odbyła dwuletni staż diagnostyczno-terapeutyczny w Fundacji SYNAPSIS.
+W pracy stawia na indywidualne podejście, empatię i otwartość wobec dziecka.
+Prywatnie mama, wielbicielka psów, małych podróży i gier planszowych.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[golec.webp]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_zdjecie_plik]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_foto]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Ewa Linowska]]></title>
+		<link>/kadra-osoba/linowska/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-linowska</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>131</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[linowska]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>150</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Psycholog, psychoterapeuta]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[specjalisci]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka Wydziału Psychologii Uniwersytetu Warszawskiego.
+Posiada certyfikat psychoterapeuty Instytutu Psychoanalizy i Psychoterapii w Warszawie.
+Studentka studiów podyplomowych Seksuologia kliniczna (Warszawski Uniwersytet Medyczny).
+Pracuje z dziećmi, młodzieżą, osobami dorosłymi, parami i rodzinami.
+Swoją pracę poddaje regularnej superwizji indywidualnej i grupowej.
+Posiada przygotowanie pedagogiczne.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Marta Byszko]]></title>
+		<link>/kadra-osoba/byszko/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-byszko</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>132</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[byszko]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>160</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Neurologopeda, pedagog specjalny]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[specjalisci]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka Akademii Pedagogiki Specjalnej i SWPS w Warszawie.
+Od 2011 roku w przedszkolu „Czarodziejski Dworek" — kompleksowa diagnoza i indywidualna terapia logopedyczna dzieci.
+Konstruuje indywidualne programy terapeutyczne, wspiera komunikację dzieci ze spektrum autyzmu, konsultuje rodziców.
+Ma doświadczenie w szkoleniu kadry w zakresie komunikowania się osób z autyzmem.
+Szkolenia m.in.: PECS, diagnoza funkcjonalna PEP-R, zaburzenia połykania, metoda werbotonalna.
+Prywatnie mama Ady i miłośniczka fitnessu.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Małgorzata Kunat]]></title>
+		<link>/kadra-osoba/kunat/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-kunat</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>133</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[kunat]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>170</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Neurologopeda, logopeda ogólny i kliniczny]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[specjalisci]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Absolwentka Uniwersytetu Warszawskiego — Logopedia Ogólna i Kliniczna (we współpracy z WUM).
+Ukończyła podyplomową Neurologopedię profilowaną ze specjalnością Wczesna Interwencja Neurologopedyczna.
+Odbyła staż na Oddziale Terapii i Rehabilitacji Neurologicznej oraz praktyki w Centrum Intensywnej Terapii Olinek.
+Prowadziła zajęcia logorytmiczne, profilaktykę logopedyczną oraz terapię dzieci z afazją, opóźnieniami mowy i ze spektrum autyzmu.
+Neurologopedia to jej pasja — stale doskonali warsztat i śledzi najnowsze badania.
+Prywatnie miłośniczka muzyki — śpiewała w jednym z warszawskich chórów.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+	<item>
+		<title><![CDATA[Anna Sławikowska]]></title>
+		<link>/kadra-osoba/slawikowska/</link>
+		<pubDate>Thu, 01 Jan 2026 10:00:00 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<guid isPermaLink="false">dworek-kadra-slawikowska</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>134</wp:post_id>
+		<wp:post_date><![CDATA[2026-01-01 09:00:00]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2026-01-01 09:00:00]]></wp:post_date_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[slawikowska]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>180</wp:menu_order>
+		<wp:post_type><![CDATA[kadra]]></wp:post_type>
+		<wp:post_password></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Fizjoterapeuta, terapeuta SI]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_rola]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_rola]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[specjalisci]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_grupa]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_grupa]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[Ukończyła Akademię Wychowania Fizycznego w Warszawie.
+Jest fizjoterapeutką i terapeutką Integracji Sensorycznej.
+Od wielu lat z pasją pracuje z dziećmi.
+Stale poszerza wiedzę na kursach i konferencjach dotyczących rozwoju ruchowego dzieci.]]></wp:meta_value>
+		</wp:postmeta>
+		<wp:postmeta>
+			<wp:meta_key><![CDATA[_bio]]></wp:meta_key>
+			<wp:meta_value><![CDATA[field_kadra_bio]]></wp:meta_value>
+		</wp:postmeta>
+	</item>
+</channel>
+</rss>

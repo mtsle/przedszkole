@@ -1,0 +1,12 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "phpExtensionBundles": ["kitchen-sink"],
+  "steps": [
+    { "step": "setSiteOptions", "options": { "permalink_structure": "/%postname%/", "blogname": "Czarodziejski Dworek" } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "advanced-custom-fields" } },
+    { "step": "activateTheme", "themeFolderName": "czarodziejski-dworek" },
+    { "step": "runPHP", "code": "<?php require '/wordpress/wp-content/themes/czarodziejski-dworek/_import/seed-tresci.php'; require '/wordpress/wp-content/themes/czarodziejski-dworek/_import/seed-kadra.php';" }
+  ]
+}
