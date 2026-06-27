@@ -1,9 +1,9 @@
 <?php
 /**
  * Szablon strony głównej (front-page.php).
- * Wygląd 1:1 z projektu HTML. Treść sekcji Hero edytowalna przez ACF
- * (z treścią domyślną = wygląd identyczny nawet bez ACF). Sekcja
- * „Aktualności" pobiera 3 najnowsze wpisy WordPress.
+ * Wygląd 1:1 z projektu HTML. CAŁA treść tekstowa (Hero + sekcje + opinie)
+ * edytowalna przez ACF — z treścią domyślną = wygląd identyczny nawet bez ACF.
+ * Sekcja „Aktualności" pobiera 3 najnowsze wpisy WordPress.
  *
  * @package Czarodziejski_Dworek
  */
@@ -90,48 +90,48 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Dlaczego warto</span>
-			<h2>Dlaczego warto wybrać Czarodziejski Dworek?</h2>
-			<p>Ponad 20 lat doświadczenia, małe grupy i specjaliści na miejscu — wszystko, czego potrzebuje Twoje dziecko, by rosło bezpieczne, radosne i ciekawe świata.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_warto_title', 'Dlaczego warto wybrać Czarodziejski Dworek?' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_warto_lead', 'Ponad 20 lat doświadczenia, małe grupy i specjaliści na miejscu — wszystko, czego potrzebuje Twoje dziecko, by rosło bezpieczne, radosne i ciekawe świata.' ) ); ?></p>
 		</div>
 		<div class="grid features__grid feat-grid">
 			<article class="card reveal">
 				<div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3 2.7-5 6-5s6 2 6 5M15 20c0-2 1-3.5 3-4"/></svg></div>
-				<h3>Małe grupy</h3>
-				<p>Do 14 dzieci w grupie i 2 nauczycieli — każde dziecko jest naprawdę zauważone.</p>
+				<h3><?php echo esc_html( dworek_field( 'hp_warto1_t', 'Małe grupy' ) ); ?></h3>
+				<p><?php echo esc_html( dworek_field( 'hp_warto1_d', 'Do 14 dzieci w grupie i 2 nauczycieli — każde dziecko jest naprawdę zauważone.' ) ); ?></p>
 			</article>
 			<article class="card reveal" data-delay="1">
 				<div class="card__icon c-sky" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C5 14 3 11 3 8a5 5 0 019-3 5 5 0 019 3c0 3-2 6-9 13z"/></svg></div>
-				<h3>Specjaliści na miejscu</h3>
-				<p>Logopeda, psycholog, terapeuta SI i fizjoterapeuta — wszyscy w przedszkolu.</p>
+				<h3><?php echo esc_html( dworek_field( 'hp_warto2_t', 'Specjaliści na miejscu' ) ); ?></h3>
+				<p><?php echo esc_html( dworek_field( 'hp_warto2_d', 'Logopeda, psycholog, terapeuta SI i fizjoterapeuta — wszyscy w przedszkolu.' ) ); ?></p>
 			</article>
 			<article class="card reveal" data-delay="2">
 				<div class="card__icon c-pink" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h14l-1 9H6l-1-9z"/><path d="M9 11V7a3 3 0 016 0v4"/></svg></div>
-				<h3>Zdrowe jedzenie</h3>
-				<p>Smaczne, zdrowe posiłki — uwzględniamy wszystkie diety dzieci.</p>
+				<h3><?php echo esc_html( dworek_field( 'hp_warto3_t', 'Zdrowe jedzenie' ) ); ?></h3>
+				<p><?php echo esc_html( dworek_field( 'hp_warto3_d', 'Smaczne, zdrowe posiłki — uwzględniamy wszystkie diety dzieci.' ) ); ?></p>
 			</article>
 			<article class="card reveal" data-delay="3">
 				<div class="card__icon c-green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-7 9 7v11h-6v-6H9v6z"/></svg></div>
-				<h3>Bezpieczny teren</h3>
-				<p>Duży, ogrodzony plac zabaw i własny parking dla rodziców.</p>
+				<h3><?php echo esc_html( dworek_field( 'hp_warto4_t', 'Bezpieczny teren' ) ); ?></h3>
+				<p><?php echo esc_html( dworek_field( 'hp_warto4_d', 'Duży, ogrodzony plac zabaw i własny parking dla rodziców.' ) ); ?></p>
 			</article>
 		</div>
+		<?php
+		$hp_adv = preg_split( '/\r\n|\r|\n/', dworek_field( 'hp_adv', "Przestronne sale edukacyjne z zapleczem sanitarnym\nNieodpłatne zajęcia terapeutyczne, językowe, basen i warsztaty\nWsparcie dla rodziców: konsultacje, warsztaty i szkolenia\n„Zielone noce” i kilkudniowe wycieczki" ) );
+		$hp_adv = array_values( array_filter( array_map( 'trim', $hp_adv ), 'strlen' ) );
+		$hp_adv_ico = array(
+			'<span class="adv-card__icon c-sky" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M3 9h18M8 20h8M12 16v4"/></svg></span>',
+			'<span class="adv-card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.4 6 .9-4.35 4.2 1.05 6L12 17.7 6.6 20.5l1.05-6L3.3 9.3l6-.9z"/></svg></span>',
+			'<span class="adv-card__icon c-yellow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>',
+			'<span class="adv-card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.2 6.2 0 0 0 10.5 10.5z"/><path d="M18 4.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8L15.5 7l1.8-.7z"/></svg></span>',
+		);
+		?>
 		<div class="adv-grid reveal" style="margin-top:var(--s-5)">
-			<div class="adv-card">
-				<span class="adv-card__icon c-sky" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M3 9h18M8 20h8M12 16v4"/></svg></span>
-				<p>Przestronne sale edukacyjne z zapleczem sanitarnym</p>
-			</div>
-			<div class="adv-card">
-				<span class="adv-card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.4 6 .9-4.35 4.2 1.05 6L12 17.7 6.6 20.5l1.05-6L3.3 9.3l6-.9z"/></svg></span>
-				<p>Nieodpłatne zajęcia terapeutyczne, językowe, basen i warsztaty</p>
-			</div>
-			<div class="adv-card">
-				<span class="adv-card__icon c-yellow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-				<p>Wsparcie dla rodziców: konsultacje, warsztaty i szkolenia</p>
-			</div>
-			<div class="adv-card">
-				<span class="adv-card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.2 6.2 0 0 0 10.5 10.5z"/><path d="M18 4.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8L15.5 7l1.8-.7z"/></svg></span>
-				<p>„Zielone noce" i kilkudniowe wycieczki</p>
-			</div>
+			<?php foreach ( $hp_adv_ico as $idx => $ico ) : ?>
+				<div class="adv-card">
+					<?php echo $ico; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+					<p><?php echo esc_html( isset( $hp_adv[ $idx ] ) ? $hp_adv[ $idx ] : '' ); ?></p>
+				</div>
+			<?php endforeach; ?>
 		</div>
 		<div class="photo-mosaic reveal" data-lightbox>
 			<figure class="pm-big"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/warto-basen.webp" alt="Dzieci podczas nauki pływania na basenie z instruktorem" width="1600" height="1062"><figcaption>Basen i bogata oferta w cenie czesnego</figcaption></figure>
@@ -148,14 +148,10 @@ $t = get_template_directory_uri();
 		<div class="split split--reverse">
 			<div class="split__media reveal"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/kroki.jpg" alt="Nauczycielka i dzieci podczas wspólnych zajęć przy stole w przedszkolu" width="900" height="600"></div>
 			<div class="split__content reveal" data-delay="1">
-				<h2>Wyjątkowe przedszkole z 20-letnią tradycją</h2>
-				<p>Przedszkole założyliśmy we wrześniu 2003 roku. Jesteśmy wpisani do ewidencji szkół i placówek niepublicznych pod nr 111/PN. Naszym celem jest dbanie o wszechstronny rozwój dziecka — odkrywamy i doceniamy jego mocne strony, zaszczepiamy pasje twórcze i wspomagamy harmonijny rozwój.</p>
-				<ul class="checklist">
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Indywidualne podejście do każdego dziecka</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rodzinna, ciepła atmosfera</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Wykwalifikowana kadra i specjaliści na miejscu</li>
-				</ul>
-				<a href="<?php echo esc_url( home_url( '/o-nas/' ) ); ?>" class="btn btn--accent">Więcej o nas</a>
+				<h2><?php echo esc_html( dworek_field( 'hp_onas_title', 'Wyjątkowe przedszkole z 20-letnią tradycją' ) ); ?></h2>
+				<p><?php echo esc_html( dworek_field( 'hp_onas_p', 'Przedszkole założyliśmy we wrześniu 2003 roku. Jesteśmy wpisani do ewidencji szkół i placówek niepublicznych pod nr 111/PN. Naszym celem jest dbanie o wszechstronny rozwój dziecka — odkrywamy i doceniamy jego mocne strony, zaszczepiamy pasje twórcze i wspomagamy harmonijny rozwój.' ) ); ?></p>
+				<ul class="checklist"><?php echo dworek_checklist( dworek_field( 'hp_onas_list', "Indywidualne podejście do każdego dziecka\nRodzinna, ciepła atmosfera\nWykwalifikowana kadra i specjaliści na miejscu" ) ); ?></ul>
+				<a href="<?php echo esc_url( home_url( '/o-nas/' ) ); ?>" class="btn btn--accent"><?php echo esc_html( dworek_field( 'hp_onas_btn', 'Więcej o nas' ) ); ?></a>
 			</div>
 		</div>
 	</div>
@@ -166,25 +162,25 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Zajęcia w czesnym</span>
-			<h2>Bogata oferta bez dodatkowych opłat</h2>
-			<p>Basen, języki i muzyka są w cenie czesnego — bez ukrytych kosztów.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_zaj_title', 'Bogata oferta bez dodatkowych opłat' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_zaj_lead', 'Basen, języki i muzyka są w cenie czesnego — bez ukrytych kosztów.' ) ); ?></p>
 		</div>
 		<div class="grid features__grid">
 			<article class="card pic-card reveal">
 				<img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/basen.webp" alt="Dzieci uczą się pływać na basenie — zajęcia pływania w czesnym">
-				<div class="pic-card__body"><span class="tag">W czesnym</span><h3>Basen</h3><p>Nauka pływania i oswajanie z wodą pod okiem instruktorów.</p></div>
+				<div class="pic-card__body"><span class="tag">W czesnym</span><h3><?php echo esc_html( dworek_field( 'hp_zaj1_t', 'Basen' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_zaj1_d', 'Nauka pływania i oswajanie z wodą pod okiem instruktorów.' ) ); ?></p></div>
 			</article>
 			<article class="card pic-card reveal" data-delay="1">
 				<img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/angielski.webp" alt="Flaga i mapa Wielkiej Brytanii — zajęcia z języka angielskiego w przedszkolu">
-				<div class="pic-card__body"><span class="tag">W czesnym</span><h3>Język angielski</h3><p>Codzienny kontakt z językiem — nauka przez zabawę i piosenki.</p></div>
+				<div class="pic-card__body"><span class="tag">W czesnym</span><h3><?php echo esc_html( dworek_field( 'hp_zaj2_t', 'Język angielski' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_zaj2_d', 'Codzienny kontakt z językiem — nauka przez zabawę i piosenki.' ) ); ?></p></div>
 			</article>
 			<article class="card pic-card reveal" data-delay="2">
 				<img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/francuski.webp" alt="Flaga i mapa Francji — zajęcia z języka francuskiego w przedszkolu">
-				<div class="pic-card__body"><span class="tag">W czesnym</span><h3>Język francuski</h3><p>Drugi język obcy od najmłodszych lat, w naturalnej formie.</p></div>
+				<div class="pic-card__body"><span class="tag">W czesnym</span><h3><?php echo esc_html( dworek_field( 'hp_zaj3_t', 'Język francuski' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_zaj3_d', 'Drugi język obcy od najmłodszych lat, w naturalnej formie.' ) ); ?></p></div>
 			</article>
 			<article class="card pic-card reveal" data-delay="3">
 				<img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/muzyka.webp" alt="Kolorowe instrumenty muzyczne dla dzieci — zajęcia umuzykalniające">
-				<div class="pic-card__body"><span class="tag">W czesnym</span><h3>Muzyka</h3><p>Rytmika, śpiew i instrumenty — rozwój słuchu i poczucia rytmu.</p></div>
+				<div class="pic-card__body"><span class="tag">W czesnym</span><h3><?php echo esc_html( dworek_field( 'hp_zaj4_t', 'Muzyka' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_zaj4_d', 'Rytmika, śpiew i instrumenty — rozwój słuchu i poczucia rytmu.' ) ); ?></p></div>
 			</article>
 		</div>
 	</div>
@@ -197,53 +193,32 @@ $t = get_template_directory_uri();
 		<div class="split">
 			<div class="split__media reveal"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/program2.jpg" alt="Dziecko podczas twórczej zabawy kolorowymi materiałami sensorycznymi" width="900" height="600"></div>
 			<div class="split__content reveal" data-delay="1">
-				<h2>Program, w którym każda zabawa jest nauką</h2>
-				<p>„W «Czarodziejskim Dworku» każda zabawa jest nauką, a każda nauka jest zabawą." Przez radość i twórczość wspieramy wszechstronny rozwój każdego dziecka.</p>
-				<ul class="checklist">
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rozbudzamy ciekawość poznawczą</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Rozwijamy zdolności artystyczne, muzyczne i językowe</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Wspieramy wyobraźnię i poczucie własnej wartości</li>
-				</ul>
+				<h2><?php echo esc_html( dworek_field( 'hp_prog_title', 'Program, w którym każda zabawa jest nauką' ) ); ?></h2>
+				<p><?php echo esc_html( dworek_field( 'hp_prog_p', '„W «Czarodziejskim Dworku» każda zabawa jest nauką, a każda nauka jest zabawą.” Przez radość i twórczość wspieramy wszechstronny rozwój każdego dziecka.' ) ); ?></p>
+				<ul class="checklist"><?php echo dworek_checklist( dworek_field( 'hp_prog_list', "Rozbudzamy ciekawość poznawczą\nRozwijamy zdolności artystyczne, muzyczne i językowe\nWspieramy wyobraźnię i poczucie własnej wartości" ) ); ?></ul>
 			</div>
 		</div>
 
 		<div class="section-head reveal" style="margin-top:var(--s-7)">
 			<span class="eyebrow">Obszary programu</span>
-			<h2>Wszystko, co rozwijamy u dzieci</h2>
-			<p>15 zajęć i terapii w trzech obszarach — w cenie czesnego.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_prog2_title', 'Wszystko, co rozwijamy u dzieci' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_prog2_lead', '15 zajęć i terapii w trzech obszarach — w cenie czesnego.' ) ); ?></p>
 		</div>
 		<div class="grid cols-3 feat-grid">
 			<article class="card reveal" style="--dot:var(--accent)">
 				<div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
-				<h3>Edukacja i języki</h3>
-				<ul class="prog-list">
-					<li>Zajęcia edukacyjne</li>
-					<li>Język angielski</li>
-					<li>Język francuski</li>
-				</ul>
+				<h3><?php echo esc_html( dworek_field( 'hp_progc1_t', 'Edukacja i języki' ) ); ?></h3>
+				<ul class="prog-list"><?php echo dworek_lines( dworek_field( 'hp_progc1_l', "Zajęcia edukacyjne\nJęzyk angielski\nJęzyk francuski" ) ); ?></ul>
 			</article>
 			<article class="card reveal" data-delay="1" style="--dot:var(--accent)">
 				<div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-				<h3>Muzyka i ruch</h3>
-				<ul class="prog-list">
-					<li>Muzyka</li>
-					<li>Gimnastyka</li>
-					<li>Joga</li>
-					<li>Zajęcia taneczne</li>
-					<li>Basen</li>
-				</ul>
+				<h3><?php echo esc_html( dworek_field( 'hp_progc2_t', 'Muzyka i ruch' ) ); ?></h3>
+				<ul class="prog-list"><?php echo dworek_lines( dworek_field( 'hp_progc2_l', "Muzyka\nGimnastyka\nJoga\nZajęcia taneczne\nBasen" ) ); ?></ul>
 			</article>
 			<article class="card reveal" data-delay="2" style="--dot:var(--primary)">
 				<div class="card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C5 14 3 11 3 8a5 5 0 019-3 5 5 0 019 3c0 3-2 6-9 13z"/></svg></div>
-				<h3>WWR i terapia</h3>
-				<ul class="prog-list">
-					<li>Logopedia</li>
-					<li>Psycholog</li>
-					<li>Integracja sensoryczna</li>
-					<li>Trening umiejętności społecznych (TUS)</li>
-					<li>WWR i terapia pedagogiczna</li>
-					<li>Fizjoterapia</li>
-				</ul>
+				<h3><?php echo esc_html( dworek_field( 'hp_progc3_t', 'WWR i terapia' ) ); ?></h3>
+				<ul class="prog-list"><?php echo dworek_lines( dworek_field( 'hp_progc3_l', "Logopedia\nPsycholog\nIntegracja sensoryczna\nTrening umiejętności społecznych (TUS)\nWWR i terapia pedagogiczna\nFizjoterapia" ) ); ?></ul>
 			</article>
 		</div>
 	</div>
@@ -254,18 +229,18 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Kadra i specjaliści</span>
-			<h2>Specjaliści, których znajdziesz na miejscu</h2>
-			<p>Diagnoza i terapia bez konieczności szukania pomocy poza przedszkolem.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_spec_title', 'Specjaliści, których znajdziesz na miejscu' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_spec_lead', 'Diagnoza i terapia bez konieczności szukania pomocy poza przedszkolem.' ) ); ?></p>
 		</div>
 		<div class="grid cols-3 feat-grid">
-			<article class="card reveal"><div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Nauczyciele</h3><p>Doświadczona kadra pedagogiczna — 2 nauczycieli w każdej grupie.</p></article>
-			<article class="card reveal" data-delay="1"><div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Logopeda</h3><p>Diagnoza i terapia mowy, słuchu fonematycznego i komunikacji.</p></article>
-			<article class="card reveal" data-delay="2"><div class="card__icon c-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 015 5c0 1.5-.6 2.5-1.5 3.5S14 14 14 16v1h-4v-1c0-2-.6-2.5-1.5-4.5S7 9.5 7 8a5 5 0 015-5z"/><path d="M10 21h4"/></svg></div><h3>Psycholog</h3><p>Wsparcie emocjonalne i społeczne dziecka oraz konsultacje dla rodziców.</p></article>
-			<article class="card reveal"><div class="card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><h3>Terapeuta SI</h3><p>Integracja sensoryczna wspierająca koncentrację i równowagę.</p></article>
-			<article class="card reveal" data-delay="1"><div class="card__icon c-green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6m0 0l-3 6m3-6l3 6M7 11l5-1 5 1"/></svg></div><h3>Fizjoterapeuta</h3><p>Ćwiczenia wspierające prawidłową postawę i rozwój ruchowy.</p></article>
-			<article class="card reveal" data-delay="2"><div class="card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><h3>Pedagog</h3><p>Terapia pedagogiczna i wsparcie w rozwoju umiejętności szkolnych.</p></article>
+			<article class="card reveal"><div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec1_t', 'Nauczyciele' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec1_d', 'Doświadczona kadra pedagogiczna — 2 nauczycieli w każdej grupie.' ) ); ?></p></article>
+			<article class="card reveal" data-delay="1"><div class="card__icon c-blue" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec2_t', 'Logopeda' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec2_d', 'Diagnoza i terapia mowy, słuchu fonematycznego i komunikacji.' ) ); ?></p></article>
+			<article class="card reveal" data-delay="2"><div class="card__icon c-purple" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 015 5c0 1.5-.6 2.5-1.5 3.5S14 14 14 16v1h-4v-1c0-2-.6-2.5-1.5-4.5S7 9.5 7 8a5 5 0 015-5z"/><path d="M10 21h4"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec3_t', 'Psycholog' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec3_d', 'Wsparcie emocjonalne i społeczne dziecka oraz konsultacje dla rodziców.' ) ); ?></p></article>
+			<article class="card reveal"><div class="card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec4_t', 'Terapeuta SI' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec4_d', 'Integracja sensoryczna wspierająca koncentrację i równowagę.' ) ); ?></p></article>
+			<article class="card reveal" data-delay="1"><div class="card__icon c-green" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><path d="M12 7v6m0 0l-3 6m3-6l3 6M7 11l5-1 5 1"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec5_t', 'Fizjoterapeuta' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec5_d', 'Ćwiczenia wspierające prawidłową postawę i rozwój ruchowy.' ) ); ?></p></article>
+			<article class="card reveal" data-delay="2"><div class="card__icon c-orange" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><h3><?php echo esc_html( dworek_field( 'hp_spec6_t', 'Pedagog' ) ); ?></h3><p><?php echo esc_html( dworek_field( 'hp_spec6_d', 'Terapia pedagogiczna i wsparcie w rozwoju umiejętności szkolnych.' ) ); ?></p></article>
 		</div>
-		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/kadra/' ) ); ?>" class="btn btn--primary">Poznaj naszą kadrę</a></div>
+		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/kadra/' ) ); ?>" class="btn btn--primary"><?php echo esc_html( dworek_field( 'hp_spec_btn', 'Poznaj naszą kadrę' ) ); ?></a></div>
 	</div>
 </section>
 
@@ -276,14 +251,10 @@ $t = get_template_directory_uri();
 		<div class="split split--reverse">
 			<div class="split__media reveal"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/logopedia.webp" alt="Dziecko podczas indywidualnych zajęć logopedycznych z terapeutką" width="900" height="700"></div>
 			<div class="split__content reveal" data-delay="1">
-				<h2>Bezpłatne wsparcie terapeutyczne</h2>
-				<p>Dzieci z opinią o potrzebie wczesnego wspomagania rozwoju (WWR) obejmujemy bezpłatnymi, indywidualnymi zajęciami terapeutycznymi — prowadzonymi przez specjalistów na miejscu.</p>
-				<ul class="checklist">
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Terapia psychologiczna, logopedyczna i pedagogiczna</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Integracja sensoryczna oraz fizjoterapia</li>
-					<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Trening Umiejętności Społecznych (TUS)</li>
-				</ul>
-				<a href="<?php echo esc_url( home_url( '/wsparcie/' ) ); ?>" class="btn btn--accent">Poznaj nasze terapie</a>
+				<h2><?php echo esc_html( dworek_field( 'hp_wwr_title', 'Bezpłatne wsparcie terapeutyczne' ) ); ?></h2>
+				<p><?php echo esc_html( dworek_field( 'hp_wwr_p', 'Dzieci z opinią o potrzebie wczesnego wspomagania rozwoju (WWR) obejmujemy bezpłatnymi, indywidualnymi zajęciami terapeutycznymi — prowadzonymi przez specjalistów na miejscu.' ) ); ?></p>
+				<ul class="checklist"><?php echo dworek_checklist( dworek_field( 'hp_wwr_list', "Terapia psychologiczna, logopedyczna i pedagogiczna\nIntegracja sensoryczna oraz fizjoterapia\nTrening Umiejętności Społecznych (TUS)" ) ); ?></ul>
+				<a href="<?php echo esc_url( home_url( '/wsparcie/' ) ); ?>" class="btn btn--accent"><?php echo esc_html( dworek_field( 'hp_wwr_btn', 'Poznaj nasze terapie' ) ); ?></a>
 			</div>
 		</div>
 	</div>
@@ -294,9 +265,9 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="band reveal center">
 			<span class="eyebrow" style="background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.4);color:#fff">Adaptacja</span>
-			<h2 style="margin:.6rem 0">Łagodna adaptacja — poznaj nas w soboty</h2>
-			<p>Zapraszamy na bezpłatne sobotnie zajęcia adaptacyjne dla najmłodszych dzieci i ich rodziców. Wspólna zabawa pomaga dziecku spokojnie oswoić się z przedszkolem — aktualne terminy i zapisy ogłaszamy na Facebooku.</p>
-			<a href="https://www.facebook.com/czarodziejskidworek/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Zapisy przez Facebook</a>
+			<h2 style="margin:.6rem 0"><?php echo esc_html( dworek_field( 'hp_adapt_title', 'Łagodna adaptacja — poznaj nas w soboty' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_adapt_text', 'Zapraszamy na bezpłatne sobotnie zajęcia adaptacyjne dla najmłodszych dzieci i ich rodziców. Wspólna zabawa pomaga dziecku spokojnie oswoić się z przedszkolem — aktualne terminy i zapisy ogłaszamy na Facebooku.' ) ); ?></p>
+			<a href="https://www.facebook.com/czarodziejskidworek/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg"><?php echo esc_html( dworek_field( 'hp_adapt_btn', 'Zapisy przez Facebook' ) ); ?></a>
 		</div>
 	</div>
 </section>
@@ -306,7 +277,7 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Galeria</span>
-			<h2>Zajrzyj do naszego świata</h2>
+			<h2><?php echo esc_html( dworek_field( 'hp_gal_title', 'Zajrzyj do naszego świata' ) ); ?></h2>
 		</div>
 		<div class="gallery-grid reveal" data-lightbox style="max-width:940px;margin-inline:auto">
 			<figure class="span-2"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/galeria/zajecia/14352144_1127712087291481_6967720382886910998_o.webp" alt="Dzieci malują farbami podczas zajęć plastycznych"><figcaption>Zajęcia plastyczne</figcaption></figure>
@@ -315,7 +286,7 @@ $t = get_template_directory_uri();
 			<figure><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/galeria/zycie/DSCN8677.webp" alt="Ogrodzony plac zabaw przedszkola"><figcaption>Plac zabaw</figcaption></figure>
 			<figure><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/galeria/joga/94036311_676991443103064_7310551022357708800_n.webp" alt="Dzieci podczas zajęć relaksacyjnych na macie"><figcaption>Joga i relaks</figcaption></figure>
 		</div>
-		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/galeria/' ) ); ?>" class="btn btn--primary">Zobacz pełną galerię</a></div>
+		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/galeria/' ) ); ?>" class="btn btn--primary"><?php echo esc_html( dworek_field( 'hp_gal_btn', 'Zobacz pełną galerię' ) ); ?></a></div>
 	</div>
 </section>
 
@@ -324,29 +295,29 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Opinie rodziców</span>
-			<h2>Co mówią o nas rodzice</h2>
-			<p>Prawdziwe opinie z naszego profilu na Facebooku.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_op_title', 'Co mówią o nas rodzice' ) ); ?></h2>
+			<p><?php echo esc_html( dworek_field( 'hp_op_lead', 'Prawdziwe opinie z naszego profilu na Facebooku.' ) ); ?></p>
 		</div>
 		<div class="grid cols-2">
 			<article class="card quote-card reveal">
 				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
-				<blockquote>„Przedszkole ze wspaniałą kadrą, wręcz rodzinną atmosferą, które mogę polecić każdemu. Nie wyobrażam sobie nawet lepszego miejsca."</blockquote>
-				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k2.svg" alt=""><div><strong>Mariusz Linkiewicz</strong><span>rodzic</span></div></div>
+				<blockquote>„<?php echo esc_html( dworek_field( 'hp_op1_q', 'Przedszkole ze wspaniałą kadrą, wręcz rodzinną atmosferą, które mogę polecić każdemu. Nie wyobrażam sobie nawet lepszego miejsca.' ) ); ?>"</blockquote>
+				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k2.svg" alt=""><div><strong><?php echo esc_html( dworek_field( 'hp_op1_a', 'Mariusz Linkiewicz' ) ); ?></strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="1">
 				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
-				<blockquote>„Super przedszkole z indywidualnym podejściem do każdego dziecka. Bardzo dużo rozwijających zajęć, nieodpłatne zajęcia logopedyczne i świetne warsztaty edukacyjne."</blockquote>
-				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k1.svg" alt=""><div><strong>Agnieszka</strong><span>rodzic</span></div></div>
+				<blockquote>„<?php echo esc_html( dworek_field( 'hp_op2_q', 'Super przedszkole z indywidualnym podejściem do każdego dziecka. Bardzo dużo rozwijających zajęć, nieodpłatne zajęcia logopedyczne i świetne warsztaty edukacyjne.' ) ); ?>"</blockquote>
+				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k1.svg" alt=""><div><strong><?php echo esc_html( dworek_field( 'hp_op2_a', 'Agnieszka' ) ); ?></strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="1">
 				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
-				<blockquote>„Moje obie córki chodzą do tego przedszkola. Jesteśmy z mężem bardzo zadowoleni i nie zamienilibyśmy tego miejsca na żadne inne!"</blockquote>
-				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k3.svg" alt=""><div><strong>Anna Łucja</strong><span>rodzic</span></div></div>
+				<blockquote>„<?php echo esc_html( dworek_field( 'hp_op3_q', 'Moje obie córki chodzą do tego przedszkola. Jesteśmy z mężem bardzo zadowoleni i nie zamienilibyśmy tego miejsca na żadne inne!' ) ); ?>"</blockquote>
+				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k3.svg" alt=""><div><strong><?php echo esc_html( dworek_field( 'hp_op3_a', 'Anna Łucja' ) ); ?></strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="2">
 				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
-				<blockquote>„Moje dziecko uczęszcza do tego przedszkola od kilku lat i widoczna jest bardzo duża poprawa zarówno w rozwoju emocjonalnym, jak i intelektualnym."</blockquote>
-				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k6.svg" alt=""><div><strong>Agnieszka Zawadzka</strong><span>rodzic</span></div></div>
+				<blockquote>„<?php echo esc_html( dworek_field( 'hp_op4_q', 'Moje dziecko uczęszcza do tego przedszkola od kilku lat i widoczna jest bardzo duża poprawa zarówno w rozwoju emocjonalnym, jak i intelektualnym.' ) ); ?>"</blockquote>
+				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k6.svg" alt=""><div><strong><?php echo esc_html( dworek_field( 'hp_op4_a', 'Agnieszka Zawadzka' ) ); ?></strong><span>rodzic</span></div></div>
 			</article>
 		</div>
 	</div>
@@ -357,7 +328,7 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="section-head reveal">
 			<span class="eyebrow">Aktualności</span>
-			<h2>Co słychać w Dworku</h2>
+			<h2><?php echo esc_html( dworek_field( 'hp_news_title', 'Co słychać w Dworku' ) ); ?></h2>
 		</div>
 		<div class="grid cols-3">
 			<?php
@@ -408,7 +379,7 @@ $t = get_template_directory_uri();
 				</article>
 			<?php endif; ?>
 		</div>
-		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="btn btn--ghost">Zobacz blog</a></div>
+		<div class="center" style="margin-top:var(--s-4)"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>" class="btn btn--ghost"><?php echo esc_html( dworek_field( 'hp_news_btn', 'Zobacz blog' ) ); ?></a></div>
 	</div>
 </section>
 
@@ -417,13 +388,13 @@ $t = get_template_directory_uri();
 	<div class="container">
 		<div class="card reveal">
 			<span class="eyebrow">Rekrutacja</span>
-			<h2>Zapewnij dziecku wyjątkowy start</h2>
-			<p style="margin-inline:auto">Umów bezpłatne spotkanie i zobacz „Czarodziejski Dworek" od środka — poznasz kadrę, sale i ogród. Zostaw kontakt, a oddzwonimy i odpowiemy na wszystkie pytania. Bez zobowiązań.</p>
+			<h2><?php echo esc_html( dworek_field( 'hp_cta_title', 'Zapewnij dziecku wyjątkowy start' ) ); ?></h2>
+			<p style="margin-inline:auto"><?php echo esc_html( dworek_field( 'hp_cta_text', 'Umów bezpłatne spotkanie i zobacz „Czarodziejski Dworek” od środka — poznasz kadrę, sale i ogród. Zostaw kontakt, a oddzwonimy i odpowiemy na wszystkie pytania. Bez zobowiązań.' ) ); ?></p>
 			<div class="btn-row">
-				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Zapisz dziecko</a>
+				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg"><?php echo esc_html( dworek_field( 'hp_cta_btn1', 'Zapisz dziecko' ) ); ?></a>
 				<a href="tel:+48690629501" class="btn btn--ghost btn--lg">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg>
-					Zadzwoń: 690 629 501
+					<?php echo esc_html( dworek_field( 'hp_cta_btn2', 'Zadzwoń: 690 629 501' ) ); ?>
 				</a>
 			</div>
 		</div>

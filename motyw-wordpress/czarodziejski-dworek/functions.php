@@ -83,10 +83,21 @@ function dworek_assets() {
 	$css_ver  = file_exists( $css_path ) ? filemtime( $css_path ) : DWOREK_VERSION;
 	wp_enqueue_style( 'dworek-main', $theme_uri . '/css/style.css', array( 'dworek-fonts' ), $css_ver );
 
-	// --- Główny skrypt (w stopce) ---
+	// --- Główny skrypt (w stopce, z defer — niższy Total Blocking Time w PSI) ---
 	$js_path = $theme_dir . '/js/main.js';
 	$js_ver  = file_exists( $js_path ) ? filemtime( $js_path ) : DWOREK_VERSION;
-	wp_enqueue_script( 'dworek-main-js', $theme_uri . '/js/main.js', array(), $js_ver, true );
+	// Tablica jako 5. argument: WP 6.3+ rozumie 'strategy'=>'defer'; starsze WP
+	// potraktują niepustą tablicę jako „w stopce” (bezpieczny fallback).
+	wp_enqueue_script(
+		'dworek-main-js',
+		$theme_uri . '/js/main.js',
+		array(),
+		$js_ver,
+		array(
+			'in_footer' => true,
+			'strategy'  => 'defer',
+		)
+	);
 
 	// --- Most między PHP a JS: adresy bazowe (zamiast twardych ścieżek) ---
 	$contact_page = get_page_by_path( 'kontakt' );
@@ -114,6 +125,35 @@ function dworek_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'dworek_assets' );
+
+/**
+ * Ładuje arkusz Google Fonts BEZ blokowania renderu (PSI: „Eliminate
+ * render-blocking resources”). Technika media=print → onload przełącza na all.
+ * Tekst i tak jest widoczny od razu dzięki &display=swap. Fallback <noscript>
+ * dla wyłączonego JavaScriptu, by fonty zadziałały bez skryptów.
+ *
+ * @param string $html   Znacznik <link> stylu.
+ * @param string $handle Uchwyt stylu.
+ * @return string
+ */
+function dworek_async_font_css( $html, $handle ) {
+	if ( 'dworek-fonts' !== $handle ) {
+		return $html;
+	}
+	$async = str_replace(
+		"media='all'",
+		"media='print' onload=\"this.media='all'\"",
+		$html
+	);
+	// Gdy z jakiegoś powodu nie podmieniono media (inny format znacznika) —
+	// zostaw oryginał (blokujący, ale działający), żeby nic nie zepsuć.
+	if ( $async === $html ) {
+		return $html;
+	}
+	$noscript = '<noscript>' . $html . '</noscript>';
+	return $async . $noscript;
+}
+add_filter( 'style_loader_tag', 'dworek_async_font_css', 10, 2 );
 
 
 /* =========================================================================
@@ -237,11 +277,57 @@ function dworek_accent( $text ) {
 	return preg_replace( '/\[(.+?)\]/', '<span class="accent">$1</span>', $safe );
 }
 
+/**
+ * Renderuje pozycje listy „odhaczanej" (checklist) z tekstu, w którym
+ * każda niepusta linia = jeden punkt. Każdy punkt dostaje ikonę „✓".
+ * Dzięki temu klient edytuje listę zwykłym polem tekstowym (1 linia = 1 punkt),
+ * bez potrzeby płatnych pól powtarzalnych ACF.
+ *
+ * @param string $text Tekst wieloliniowy z pola ACF (lub treść domyślna).
+ * @return string Bezpieczny HTML: kolejne <li> … </li>.
+ */
+function dworek_checklist( $text ) {
+	$lines = preg_split( '/\r\n|\r|\n/', (string) $text );
+	$svg   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>';
+	$out   = '';
+	foreach ( $lines as $line ) {
+		$line = trim( $line );
+		if ( '' === $line ) {
+			continue;
+		}
+		$out .= '<li>' . $svg . ' ' . esc_html( $line ) . '</li>';
+	}
+	return $out;
+}
+
+/**
+ * Renderuje pozycje zwykłej listy (bez ikony „✓") z tekstu wieloliniowego —
+ * każda niepusta linia = jeden punkt <li>. Używane np. w „obszarach programu".
+ *
+ * @param string $text Tekst wieloliniowy z pola ACF (lub treść domyślna).
+ * @return string Bezpieczny HTML: kolejne <li> … </li>.
+ */
+function dworek_lines( $text ) {
+	$lines = preg_split( '/\r\n|\r|\n/', (string) $text );
+	$out   = '';
+	foreach ( $lines as $line ) {
+		$line = trim( $line );
+		if ( '' === $line ) {
+			continue;
+		}
+		$out .= '<li>' . esc_html( $line ) . '</li>';
+	}
+	return $out;
+}
+
 // Rejestracja grup pól ACF (jeśli wtyczka aktywna).
 require get_template_directory() . '/inc/acf-fields.php';
 
 // Typ treści „Kadra" (nauczyciele/specjaliści edytowalni z panelu).
 require get_template_directory() . '/inc/cpt-kadra.php';
+
+// Globalne dane kontaktowe (Dostosuj → „Dane kontaktowe") + helper dworek_contact().
+require get_template_directory() . '/inc/site-contact.php';
 
 // Obsługa formularzy kontaktowych (wysyłka e-mail przez wp_mail).
 require get_template_directory() . '/inc/contact-form.php';
@@ -329,9 +415,10 @@ add_filter( 'excerpt_more', 'dworek_excerpt_more' );
 function dworek_jsonld() {
 	$data = array(
 		'@context'      => 'https://schema.org',
-		// Dwa typy: Preschool (semantyka przedszkola) + LocalBusiness (poprawne
-		// pola priceRange/currenciesAccepted/openingHours i lepsze lokalne SEO).
-		'@type'         => array( 'Preschool', 'LocalBusiness' ),
+		// Typy: Preschool (semantyka przedszkola) + LocalBusiness (pola
+		// priceRange/openingHours, lokalne SEO) + EducationalOrganization +
+		// Organization (jawnie — część walidatorów szuka tych nazw dosłownie).
+		'@type'         => array( 'Preschool', 'LocalBusiness', 'EducationalOrganization', 'Organization' ),
 		'@id'           => home_url( '/#organization' ),
 		'name'          => 'Integracyjne Przedszkole Niepubliczne Językowo-Muzyczne „Czarodziejski Dworek”',
 		'alternateName' => 'Czarodziejski Dworek',

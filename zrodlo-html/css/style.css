@@ -1222,3 +1222,19 @@ select, input, textarea { max-width: 100%; }
   .hero__proof small { color: rgba(255,255,255,.86); }
   .hero__badge { background: rgba(255,255,255,.94); }
 }
+
+/* ===== Tap targets na mobile (PSI/Accessibility): większe cele dotyku =====
+   Linki w stopce i okruszkach dostają większy obszar klikania i odstęp,
+   żeby spełnić wytyczną min. 48px / 24px separacji na telefonach. */
+@media (max-width: 760px) {
+  .site-footer a:not(.btn) {
+    display: inline-block;
+    padding: .5rem 0;
+    line-height: 1.55;
+  }
+  .site-footer li { margin-bottom: .35rem; }
+  .breadcrumb a {
+    display: inline-block;
+    padding: .35rem .25rem;
+  }
+}

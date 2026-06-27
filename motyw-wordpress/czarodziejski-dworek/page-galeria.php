@@ -26,12 +26,12 @@ $t = get_template_directory_uri();
 <section class="section">
   <div class="container">
     <div class="gallery-filters reveal" role="group" aria-label="Filtruj zdjęcia">
-      <button type="button" data-filter="all" class="is-active" aria-pressed="true">Wszystkie</button>
-      <button type="button" data-filter="sale" aria-pressed="false">Sale</button>
-      <button type="button" data-filter="zajecia" aria-pressed="false">Zajęcia</button>
-      <button type="button" data-filter="plac" aria-pressed="false">Plac zabaw</button>
-      <button type="button" data-filter="warsztaty" aria-pressed="false">Warsztaty</button>
-      <button type="button" data-filter="wycieczki" aria-pressed="false">Wycieczki</button>
+      <button type="button" data-filter="all" class="is-active" aria-pressed="true"><?php echo esc_html( dworek_field( 'ga_f_all', 'Wszystkie' ) ); ?></button>
+      <button type="button" data-filter="sale" aria-pressed="false"><?php echo esc_html( dworek_field( 'ga_f_sale', 'Sale' ) ); ?></button>
+      <button type="button" data-filter="zajecia" aria-pressed="false"><?php echo esc_html( dworek_field( 'ga_f_zajecia', 'Zajęcia' ) ); ?></button>
+      <button type="button" data-filter="plac" aria-pressed="false"><?php echo esc_html( dworek_field( 'ga_f_plac', 'Plac zabaw' ) ); ?></button>
+      <button type="button" data-filter="warsztaty" aria-pressed="false"><?php echo esc_html( dworek_field( 'ga_f_warsztaty', 'Warsztaty' ) ); ?></button>
+      <button type="button" data-filter="wycieczki" aria-pressed="false"><?php echo esc_html( dworek_field( 'ga_f_wycieczki', 'Wycieczki' ) ); ?></button>
     </div>
     <div id="jgallery" class="jgallery" aria-live="polite"></div>
   </div>
@@ -40,9 +40,9 @@ $t = get_template_directory_uri();
 <section class="section cta-band">
   <div class="container">
     <div class="card reveal">
-      <h2>Chcesz zobaczyć więcej?</h2>
-      <p style="margin-inline:auto">Najlepsze chwile dzieją się na żywo. Umów bezpłatne zwiedzanie i zobacz nasze przedszkole od środka.</p>
-      <div class="btn-row"><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Umów wizytę</a></div>
+      <h2><?php echo esc_html( dworek_field( 'ga_cta_title', 'Chcesz zobaczyć więcej?' ) ); ?></h2>
+      <p style="margin-inline:auto"><?php echo esc_html( dworek_field( 'ga_cta_text', 'Najlepsze chwile dzieją się na żywo. Umów bezpłatne zwiedzanie i zobacz nasze przedszkole od środka.' ) ); ?></p>
+      <div class="btn-row"><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg"><?php echo esc_html( dworek_field( 'ga_cta_btn', 'Umów wizytę' ) ); ?></a></div>
     </div>
   </div>
 </section>

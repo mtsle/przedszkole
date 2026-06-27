@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mtsle.github.io/przedszkole/sitemap.xml
