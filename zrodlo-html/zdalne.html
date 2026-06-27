@@ -7,6 +7,8 @@
   <meta name="description" content="Logowanie do panelu WordPress przedszkola „Czarodziejski Dworek".">
   <meta name="robots" content="noindex, follow">
   <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#f0f0f1">
   <style>
     /* Replika ekranu logowania WordPress (wp-login.php) */
@@ -124,6 +126,9 @@
       word-wrap: break-word;
     }
   </style>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://mtsle.github.io/przedszkole/"}, {"@type": "ListItem", "position": 2, "name": "Zaloguj się"}]}
+  </script>
 </head>
 <body class="login">
   <div id="login">
