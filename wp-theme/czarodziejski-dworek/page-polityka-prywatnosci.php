@@ -19,7 +19,7 @@ $t = get_template_directory_uri();
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'RODO' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Polityka prywatności' ) ); ?></h1>
     <p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Prywatność osób odwiedzających naszą stronę jest dla nas bardzo ważna. Poniżej wyjaśniamy, jakie dane przetwarzamy i jak je chronimy.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Polityka prywatności</p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 

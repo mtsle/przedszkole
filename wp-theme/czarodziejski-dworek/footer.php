@@ -19,7 +19,7 @@
 			</div>
 		</div>
 		<div>
-			<h4>Nawigacja</h4>
+			<h2>Nawigacja</h2>
 			<ul class="footer-links">
 				<li><a href="<?php echo esc_url( home_url( '/o-nas/' ) ); ?>">O nas</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/oferta/' ) ); ?>">Program</a></li>
@@ -30,7 +30,7 @@
 			</ul>
 		</div>
 		<div>
-			<h4>Oferta</h4>
+			<h2>Oferta</h2>
 			<ul class="footer-links">
 				<li><a href="<?php echo esc_url( home_url( '/oferta/' ) ); ?>">Basen</a></li>
 				<li><a href="<?php echo esc_url( home_url( '/oferta/' ) ); ?>">Język angielski i francuski</a></li>
@@ -40,7 +40,7 @@
 			</ul>
 		</div>
 		<div>
-			<h4>Kontakt</h4>
+			<h2>Kontakt</h2>
 			<ul class="footer-links">
 				<li>ul. Górczewska 89, 01-401 Warszawa</li>
 				<li><a href="tel:+48690629501">690 629 501</a></li>

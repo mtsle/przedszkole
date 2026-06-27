@@ -19,7 +19,7 @@ $t = get_template_directory_uri();
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'Galeria' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Chwile z życia Dworku' ) ); ?></h1>
     <p class="lead" style="margin:.6rem auto 0;max-width:58ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Zajrzyj do naszego świata — zajęcia, zabawy i radosne momenty z codzienności przedszkola.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Galeria</p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 
@@ -41,7 +41,7 @@ $t = get_template_directory_uri();
   <div class="container">
     <div class="card reveal">
       <h2>Chcesz zobaczyć więcej?</h2>
-      <p style="margin-inline:auto">Odwiedź nas osobiście — najlepsze chwile dzieją się na żywo.</p>
+      <p style="margin-inline:auto">Najlepsze chwile dzieją się na żywo. Umów bezpłatne zwiedzanie i zobacz nasze przedszkole od środka.</p>
       <div class="btn-row"><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Umów wizytę</a></div>
     </div>
   </div>

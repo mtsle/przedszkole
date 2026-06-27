@@ -23,7 +23,7 @@ if ( ! $blog_title ) {
 		<span class="eyebrow">Aktualności</span>
 		<h1><?php echo esc_html( $blog_title ); ?></h1>
 		<p class="lead" style="margin:.6rem auto 0;max-width:60ch">Co słychać w Czarodziejskim Dworku — wydarzenia, materiały i życie przedszkola.</p>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / <?php echo esc_html( $blog_title ); ?></p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

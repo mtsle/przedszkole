@@ -246,6 +246,10 @@ require get_template_directory() . '/inc/cpt-kadra.php';
 // Obsługa formularzy kontaktowych (wysyłka e-mail przez wp_mail).
 require get_template_directory() . '/inc/contact-form.php';
 
+// SEO: meta description, canonical, Open Graph, Twitter Cards, robots,
+// breadcrumbs (mikrodane) + JSON-LD (WebSite, BreadcrumbList, Article).
+require get_template_directory() . '/inc/seo.php';
+
 
 /* =========================================================================
  * 5. DROBNE USPRAWNIENIA
@@ -316,42 +320,62 @@ function dworek_excerpt_more() {
 add_filter( 'excerpt_more', 'dworek_excerpt_more' );
 
 /**
- * JSON-LD (Schema.org Preschool) na stronie głównej i kontaktowej — dla SEO,
- * zgodnie z oryginalnym projektem HTML.
+ * JSON-LD (Schema.org Preschool) — tożsamość organizacji.
+ *
+ * Wypisywane na KAŻDEJ stronie z trwałym @id „#organization”, dzięki czemu
+ * odwołania `publisher` z modułu SEO (WebSite, Article) zawsze się rozwiązują.
+ * Dane wyłącznie prawdziwe — bez fabrykowanych ocen/opinii.
  */
 function dworek_jsonld() {
-	if ( ! is_front_page() && ! is_page( 'kontakt' ) ) {
-		return;
-	}
 	$data = array(
 		'@context'      => 'https://schema.org',
-		'@type'         => 'Preschool',
+		// Dwa typy: Preschool (semantyka przedszkola) + LocalBusiness (poprawne
+		// pola priceRange/currenciesAccepted/openingHours i lepsze lokalne SEO).
+		'@type'         => array( 'Preschool', 'LocalBusiness' ),
+		'@id'           => home_url( '/#organization' ),
 		'name'          => 'Integracyjne Przedszkole Niepubliczne Językowo-Muzyczne „Czarodziejski Dworek”',
 		'alternateName' => 'Czarodziejski Dworek',
 		'url'           => home_url( '/' ),
-		'logo'          => get_template_directory_uri() . '/img/logo.png',
+		'logo'          => array(
+			'@type' => 'ImageObject',
+			'url'   => get_template_directory_uri() . '/img/logo.png',
+		),
 		'image'         => get_template_directory_uri() . '/img/hero.webp',
 		'description'   => 'Niepubliczne przedszkole językowo-muzyczne na warszawskiej Woli — małe grupy do 14 dzieci, języki, basen, muzyka i bezpłatne terapie.',
 		'telephone'     => '+48690629501',
 		'email'         => 'kontakt@czarodziejski-dworek.pl',
 		'foundingDate'  => '2003',
 		'taxID'         => '524-246-20-37',
-		'areaServed'    => 'Warszawa',
+		'priceRange'    => '$$',
+		'currenciesAccepted' => 'PLN',
+		'areaServed'    => array(
+			'@type' => 'City',
+			'name'  => 'Warszawa',
+		),
 		'address'       => array(
 			'@type'           => 'PostalAddress',
 			'streetAddress'   => 'ul. Górczewska 89',
 			'postalCode'      => '01-401',
 			'addressLocality' => 'Warszawa',
+			'addressRegion'   => 'mazowieckie',
 			'addressCountry'  => 'PL',
 		),
+		'hasMap'        => 'https://www.google.com/maps?q=ul.+G%C3%B3rczewska+89,+01-401+Warszawa',
 		'openingHoursSpecification' => array(
 			'@type'     => 'OpeningHoursSpecification',
 			'dayOfWeek' => array( 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' ),
 			'opens'     => '07:00',
 			'closes'    => '18:00',
 		),
+		'knowsLanguage' => array( 'pl', 'en', 'fr' ),
 		'sameAs'        => array( 'https://www.facebook.com/czarodziejskidworek/' ),
 	);
+
+	// UWAGA: NIE dodajemy tu review/aggregateRating. Google nie honoruje
+	// „self-serving reviews" (opinii o firmie publikowanych przez samą firmę)
+	// dla LocalBusiness/Organization — wywołałyby ostrzeżenie w Rich Results.
+	// Opinie rodziców zostają widoczne na stronie (sekcja „Opinie") dla CRO.
+
 	echo '<script type="application/ld+json">' . wp_json_encode( $data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>' . "\n";
 }
 add_action( 'wp_head', 'dworek_jsonld' );

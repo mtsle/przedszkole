@@ -22,7 +22,7 @@ while ( have_posts() ) :
 		<?php if ( $eyebrow ) : ?><span class="eyebrow"><?php echo esc_html( $eyebrow ); ?></span><?php endif; ?>
 		<h1><?php echo esc_html( $heading ); ?></h1>
 		<?php if ( $lead ) : ?><p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( $lead ); ?></p><?php endif; ?>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / <?php the_title(); ?></p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

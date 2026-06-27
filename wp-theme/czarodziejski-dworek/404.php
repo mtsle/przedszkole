@@ -13,7 +13,7 @@ get_header();
 		<span class="eyebrow">Błąd 404</span>
 		<h1>Nie znaleziono strony</h1>
 		<p class="lead" style="margin:.6rem auto 0;max-width:60ch">Wygląda na to, że ta strona zniknęła jak za dotknięciem czarodziejskiej różdżki. Sprawdź adres lub wróć na stronę główną.</p>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / 404</p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

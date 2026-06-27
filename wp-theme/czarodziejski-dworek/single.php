@@ -17,7 +17,7 @@ while ( have_posts() ) :
 	<div class="container reveal">
 		<span class="eyebrow"><?php echo esc_html( $cat_label ? $cat_label : 'Aktualności' ); ?></span>
 		<h1><?php the_title(); ?></h1>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / <a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">Blog</a> / <?php the_title(); ?></p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

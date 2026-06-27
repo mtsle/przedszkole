@@ -150,10 +150,7 @@
 		<description></description>
 		<content:encoded><![CDATA[<img class="article-hero-img" src="/wp-content/themes/czarodziejski-dworek/img/real/blog/piknik.webp" alt="Plakat Czarodziejskiego Pikniku Jubileuszowego — 20 lat przedszkola" width="1170" height="650">
 <p>Serdecznie zapraszamy naszych absolwentów na piknik z okazji 20-lecia Przedszkola „Czarodziejski Dworek”! To wyjątkowy moment, który chcemy świętować razem z Wami — naszymi przedszkolakami, absolwentami, ich rodzinami oraz wszystkimi przyjaciółmi przedszkola.</p>
-        <div class="article-info">
-          <p><strong>Kiedy:</strong> sobota, 25 maja 2024 r., w godzinach 11:30–14:30.</p>
-          <p><strong>Gdzie:</strong> Centrum Attis — teren zielony obok placu zabaw (ul. Górczewska 89, 01-401 Warszawa).</p>
-        </div>
+<p class="article-info"><strong>Kiedy:</strong> sobota, 25 maja 2024 r., w godzinach 11:30–14:30.<br><strong>Gdzie:</strong> Centrum Attis — teren zielony obok placu zabaw (ul. Górczewska 89, 01-401 Warszawa).</p>
         <h2>Co nas czeka?</h2>
         <ul class="dotted">
           <li>🌼 Galeria wspomnień</li>

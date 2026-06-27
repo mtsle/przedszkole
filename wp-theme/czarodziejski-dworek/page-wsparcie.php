@@ -19,7 +19,7 @@ $t = get_template_directory_uri();
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'WWR i terapia' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Wczesne wspomaganie rozwoju i terapia' ) ); ?></h1>
     <p class="lead" style="margin:.6rem auto 0;max-width:62ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Pod jednym dachem zapewniamy diagnozę i terapię prowadzoną przez doświadczonych specjalistów — bez konieczności szukania pomocy poza przedszkolem.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / WWR i terapia</p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 
@@ -218,10 +218,10 @@ $t = get_template_directory_uri();
     <div class="split__content reveal" data-delay="1">
       <span class="eyebrow">Adaptacja · bezpłatnie</span>
       <h2>Łagodna adaptacja — spokojny start w przedszkolu</h2>
-      <p>Dla przyszłych przedszkolaków (rocznik 2023) organizujemy <strong>bezpłatne, sobotnie zajęcia adaptacyjne</strong>. To czas, by dziecko — razem z rodzicem — spokojnie poznało przedszkole, panie i nowych kolegów jeszcze przed rozpoczęciem roku.</p>
+      <p>Dla przyszłych przedszkolaków organizujemy <strong>bezpłatne, sobotnie zajęcia adaptacyjne</strong>. To czas, by dziecko — razem z rodzicem — spokojnie poznało przedszkole, panie i nowych kolegów jeszcze przed rozpoczęciem roku.</p>
       <ul class="checklist">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Bezpłatne spotkania w soboty</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Dla dzieci z rocznika 2023</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Dla najmłodszych, przyszłych przedszkolaków</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Dziecko poznaje panie, salę i rówieśników</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Łagodne, stopniowe oswajanie bez pośpiechu</li>
       </ul>
@@ -303,7 +303,7 @@ $t = get_template_directory_uri();
     <div class="band reveal center">
       <span class="eyebrow" style="background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.45);color:#fff">Terminy</span>
       <h2 style="margin:.6rem 0">Terminy zajęć adaptacyjnych</h2>
-      <p>Sobotnie zajęcia adaptacyjne są bezpłatne i przeznaczone dla dzieci z rocznika 2023. Konkretne terminy oraz zapisy ogłaszamy na bieżąco na naszym Facebooku — zajrzyj tam albo po prostu do nas zadzwoń, a wszystko podpowiemy.</p>
+      <p>Sobotnie zajęcia adaptacyjne są bezpłatne i przeznaczone dla najmłodszych, przyszłych przedszkolaków. Konkretne terminy oraz zapisy ogłaszamy na bieżąco na naszym Facebooku — zajrzyj tam albo po prostu do nas zadzwoń, a wszystko podpowiemy.</p>
       <div class="btn-row" style="justify-content:center;margin-top:var(--s-3)">
         <a href="https://www.facebook.com/czarodziejskidworek/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Zapisy przez Facebook</a>
         <a href="#kontakt" class="btn btn--ghost btn--lg">Napisz do nas</a>

@@ -19,7 +19,7 @@ $t = get_template_directory_uri();
 		<svg class="goo-defs" width="0" height="0" focusable="false"><defs>
 			<filter id="heroGoo">
 				<feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
-				<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo"/>
+				<feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="goo"/>
 				<feBlend in="SourceGraphic" in2="goo"/>
 			</filter>
 		</defs></svg>
@@ -33,25 +33,25 @@ $t = get_template_directory_uri();
 		</div>
 	</div>
 	<div class="hero__floating" aria-hidden="true">
-		<div class="hero__float" data-depth="1.2" style="top:1%;left:57%;--w:200px;--dur:9s;--delay:.6s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-muzyka.webp" alt="Dziecko gra na keyboardzie podczas zajęć muzycznych"></div>
-		<div class="hero__float" data-depth="0.6" style="top:3%;left:76%;--w:185px;--dur:8s;--delay:0s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-malowanie.webp" alt="Dzieci podczas grupowych zajęć plastycznych w przedszkolu"></div>
-		<div class="hero__float" data-depth="1.6" style="top:1%;left:92%;--w:155px;--dur:7.6s;--delay:1.2s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-radosc.webp" alt="Radosna dziewczynka w stroju baletowym w przedszkolu"></div>
-		<div class="hero__float" data-depth="2.4" style="top:27%;left:46%;--w:160px;--dur:7.5s;--delay:.2s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-basen.webp" alt="Dzieci podczas nauki pływania na basenie w przedszkolu Czarodziejski Dworek"></div>
-		<div class="hero__float" data-depth="1" style="top:25%;left:64%;--w:225px;--dur:8.5s;--delay:.9s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-klocki.webp" alt="Dzieci budują z dużych kolorowych klocków piankowych"></div>
-		<div class="hero__float" data-depth="1.8" style="top:28%;left:86%;--w:170px;--dur:7.8s;--delay:.5s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-stolik.webp" alt="Dzieci oglądają książeczkę przy stoliku podczas zajęć"></div>
-		<div class="hero__float" data-depth="3" style="top:51%;left:47%;--w:150px;--dur:6.5s;--delay:1.1s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-sensoryka.webp" alt="Dzieci podczas wspólnych zajęć sensorycznych przy stole"></div>
-		<div class="hero__float" data-depth="1.3" style="top:50%;left:65%;--w:205px;--dur:8.2s;--delay:.3s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-grupa.webp" alt="Dzieci w papierowych koronach podczas zajęć grupowych w przedszkolu"></div>
-		<div class="hero__float" data-depth="2" style="top:53%;left:87%;--w:170px;--dur:7.4s;--delay:.8s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-nauka.webp" alt="Kolorowe kredki i rysunki dzieci podczas zajęć plastycznych"></div>
-		<div class="hero__float" data-depth="2.6" style="top:75%;left:49%;--w:165px;--dur:7s;--delay:.4s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-plener.webp" alt="Dzieci na spacerze wśród drzew w ogrodzie przedszkolnym"></div>
-		<div class="hero__float" data-depth="0.6" style="top:76%;left:69%;--w:150px;--dur:9.5s;--delay:1s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-emocje.webp" alt="Dziewczynka w skupieniu w sali przedszkolnej"></div>
-		<div class="hero__float" data-depth="1.5" style="top:73%;left:88%;--w:175px;--dur:8.3s;--delay:.15s"><img decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-kreda.webp" alt="Dzieci podczas kreatywnej zabawy kolorowymi materiałami"></div>
+		<div class="hero__float" data-depth="1.2" style="top:1%;left:57%;--w:200px;--dur:9s;--delay:.6s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-muzyka.webp" alt="Dziecko gra na keyboardzie podczas zajęć muzycznych"></div>
+		<div class="hero__float" data-depth="0.6" style="top:3%;left:76%;--w:185px;--dur:8s;--delay:0s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-malowanie.webp" alt="Dzieci podczas grupowych zajęć plastycznych w przedszkolu"></div>
+		<div class="hero__float" data-depth="1.6" style="top:1%;left:92%;--w:155px;--dur:7.6s;--delay:1.2s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-radosc.webp" alt="Radosna dziewczynka w stroju baletowym w przedszkolu"></div>
+		<div class="hero__float" data-depth="2.4" style="top:27%;left:46%;--w:160px;--dur:7.5s;--delay:.2s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-basen.webp" alt="Dzieci podczas nauki pływania na basenie w przedszkolu Czarodziejski Dworek"></div>
+		<div class="hero__float" data-depth="1" style="top:25%;left:64%;--w:225px;--dur:8.5s;--delay:.9s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-klocki.webp" alt="Dzieci budują z dużych kolorowych klocków piankowych"></div>
+		<div class="hero__float" data-depth="1.8" style="top:28%;left:86%;--w:170px;--dur:7.8s;--delay:.5s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-stolik.webp" alt="Dzieci oglądają książeczkę przy stoliku podczas zajęć"></div>
+		<div class="hero__float" data-depth="3" style="top:51%;left:47%;--w:150px;--dur:6.5s;--delay:1.1s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-sensoryka.webp" alt="Dzieci podczas wspólnych zajęć sensorycznych przy stole"></div>
+		<div class="hero__float" data-depth="1.3" style="top:50%;left:65%;--w:205px;--dur:8.2s;--delay:.3s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-grupa.webp" alt="Dzieci w papierowych koronach podczas zajęć grupowych w przedszkolu"></div>
+		<div class="hero__float" data-depth="2" style="top:53%;left:87%;--w:170px;--dur:7.4s;--delay:.8s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-nauka.webp" alt="Kolorowe kredki i rysunki dzieci podczas zajęć plastycznych"></div>
+		<div class="hero__float" data-depth="2.6" style="top:75%;left:49%;--w:165px;--dur:7s;--delay:.4s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-plener.webp" alt="Dzieci na spacerze wśród drzew w ogrodzie przedszkolnym"></div>
+		<div class="hero__float" data-depth="0.6" style="top:76%;left:69%;--w:150px;--dur:9.5s;--delay:1s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-emocje.webp" alt="Dziewczynka w skupieniu w sali przedszkolnej"></div>
+		<div class="hero__float" data-depth="1.5" style="top:73%;left:88%;--w:175px;--dur:8.3s;--delay:.15s"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/real/hero/hero-kreda.webp" alt="Dzieci podczas kreatywnej zabawy kolorowymi materiałami"></div>
 	</div>
 	<div class="hero__scrim" aria-hidden="true"></div>
 	<div class="container hero__grid">
 		<div class="hero__content reveal">
 			<span class="eyebrow"><?php echo esc_html( dworek_field( 'hero_eyebrow', 'Przedszkole językowo-muzyczne · Warszawa, Wola · od 2003' ) ); ?></span>
 			<h1><?php echo dworek_accent( dworek_field( 'hero_title', 'Tu odkrywamy [mocne strony] Twojego dziecka' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h1>
-			<p class="lead"><?php echo esc_html( dworek_field( 'hero_lead', '„Czarodziejski Dworek" to niepubliczne przedszkole, w którym dbamy o wszechstronny rozwój dziecka — zaszczepiamy pasje twórcze, rozwijamy zdolności i wspieramy harmonijny rozwój. Działamy od 2003 roku przy ul. Górczewskiej 89.' ) ); ?></p>
+			<p class="lead"><?php echo esc_html( dworek_field( 'hero_lead', 'Kameralne, niepubliczne przedszkole na warszawskiej Woli, w którym Twoje dziecko jest naprawdę zauważone. Małe grupy, języki, basen i muzyka w czesnym oraz specjaliści na miejscu — od 2003 roku. Umów wizytę i zobacz nas od środka.' ) ); ?></p>
 			<div class="hero__cta">
 				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg"><?php echo esc_html( dworek_field( 'hero_cta_label', 'Zapisz dziecko' ) ); ?>
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -63,7 +63,7 @@ $t = get_template_directory_uri();
 					<img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k1.svg" alt=""><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k2.svg" alt=""><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k3.svg" alt=""><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k6.svg" alt="">
 				</div>
 				<div>
-					<div class="stars" aria-label="Ocena 5 na 5">
+					<div class="stars" role="img" aria-label="Ocena 5 na 5">
 						<svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg>
 					</div>
 					<strong>Rodzice nas polecają</strong><small>opinie na Facebooku</small>
@@ -91,7 +91,7 @@ $t = get_template_directory_uri();
 		<div class="section-head reveal">
 			<span class="eyebrow">Dlaczego warto</span>
 			<h2>Dlaczego warto wybrać Czarodziejski Dworek?</h2>
-			<p>Wszystko, co składa się na bezpieczne, radosne i mądre przedszkole — w jednym miejscu.</p>
+			<p>Ponad 20 lat doświadczenia, małe grupy i specjaliści na miejscu — wszystko, czego potrzebuje Twoje dziecko, by rosło bezpieczne, radosne i ciekawe świata.</p>
 		</div>
 		<div class="grid features__grid feat-grid">
 			<article class="card reveal">
@@ -295,7 +295,7 @@ $t = get_template_directory_uri();
 		<div class="band reveal center">
 			<span class="eyebrow" style="background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.4);color:#fff">Adaptacja</span>
 			<h2 style="margin:.6rem 0">Łagodna adaptacja — poznaj nas w soboty</h2>
-			<p>Zapraszamy na bezpłatne sobotnie zajęcia adaptacyjne dla dzieci z rocznika 2023 i ich rodziców. Wspólna zabawa pomaga dziecku spokojnie oswoić się z przedszkolem — aktualne terminy i zapisy ogłaszamy na Facebooku.</p>
+			<p>Zapraszamy na bezpłatne sobotnie zajęcia adaptacyjne dla najmłodszych dzieci i ich rodziców. Wspólna zabawa pomaga dziecku spokojnie oswoić się z przedszkolem — aktualne terminy i zapisy ogłaszamy na Facebooku.</p>
 			<a href="https://www.facebook.com/czarodziejskidworek/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Zapisy przez Facebook</a>
 		</div>
 	</div>
@@ -329,22 +329,22 @@ $t = get_template_directory_uri();
 		</div>
 		<div class="grid cols-2">
 			<article class="card quote-card reveal">
-				<div class="stars" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
+				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
 				<blockquote>„Przedszkole ze wspaniałą kadrą, wręcz rodzinną atmosferą, które mogę polecić każdemu. Nie wyobrażam sobie nawet lepszego miejsca."</blockquote>
 				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k2.svg" alt=""><div><strong>Mariusz Linkiewicz</strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="1">
-				<div class="stars" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
+				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
 				<blockquote>„Super przedszkole z indywidualnym podejściem do każdego dziecka. Bardzo dużo rozwijających zajęć, nieodpłatne zajęcia logopedyczne i świetne warsztaty edukacyjne."</blockquote>
 				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k1.svg" alt=""><div><strong>Agnieszka</strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="1">
-				<div class="stars" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
+				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
 				<blockquote>„Moje obie córki chodzą do tego przedszkola. Jesteśmy z mężem bardzo zadowoleni i nie zamienilibyśmy tego miejsca na żadne inne!"</blockquote>
 				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k3.svg" alt=""><div><strong>Anna Łucja</strong><span>rodzic</span></div></div>
 			</article>
 			<article class="card quote-card reveal" data-delay="2">
-				<div class="stars" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
+				<div class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 .5-5 4.5 1.5 7L12 16l-6.5 4 1.5-7-5-4.5 7-.5z"/></svg></div>
 				<blockquote>„Moje dziecko uczęszcza do tego przedszkola od kilku lat i widoczna jest bardzo duża poprawa zarówno w rozwoju emocjonalnym, jak i intelektualnym."</blockquote>
 				<div class="who"><img loading="lazy" decoding="async" src="<?php echo esc_url( $t ); ?>/img/kadra/k6.svg" alt=""><div><strong>Agnieszka Zawadzka</strong><span>rodzic</span></div></div>
 			</article>
@@ -418,7 +418,7 @@ $t = get_template_directory_uri();
 		<div class="card reveal">
 			<span class="eyebrow">Rekrutacja</span>
 			<h2>Zapewnij dziecku wyjątkowy start</h2>
-			<p style="margin-inline:auto">Umów się na spotkanie i zobacz „Czarodziejski Dworek" od środka. Z radością odpowiemy na wszystkie pytania.</p>
+			<p style="margin-inline:auto">Umów bezpłatne spotkanie i zobacz „Czarodziejski Dworek" od środka — poznasz kadrę, sale i ogród. Zostaw kontakt, a oddzwonimy i odpowiemy na wszystkie pytania. Bez zobowiązań.</p>
 			<div class="btn-row">
 				<a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Zapisz dziecko</a>
 				<a href="tel:+48690629501" class="btn btn--ghost btn--lg">

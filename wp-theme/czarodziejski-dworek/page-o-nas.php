@@ -18,8 +18,8 @@ $t = get_template_directory_uri();
   <div class="container reveal">
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'O „Czarodziejskim Dworku"' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Magiczne miejsce, w którym dzieci rosną' ) ); ?></h1>
-    <p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Jesteśmy kameralnym, niepublicznym przedszkolem łączącym edukację językową i muzyczną z troską o indywidualny rozwój każdego dziecka.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / O nas</p>
+    <p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Jesteśmy kameralnym, niepublicznym przedszkolem łączącym edukację językową i muzyczną z troską o indywidualny rozwój każdego dziecka. Działamy na warszawskiej Woli od 2003 roku.' ) ); ?></p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 
@@ -203,7 +203,7 @@ $t = get_template_directory_uri();
   <div class="container">
     <div class="card reveal">
       <h2>Chcesz zobaczyć nas na żywo?</h2>
-      <p style="margin-inline:auto">Zapraszamy na spotkanie i zwiedzanie przedszkola. Pokażemy sale, ogród i opowiemy o naszym programie.</p>
+      <p style="margin-inline:auto">Zapraszamy na spotkanie i zwiedzanie przedszkola — bez zobowiązań. Pokażemy sale, ogród i opowiemy o naszym programie.</p>
       <div class="btn-row"><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Umów spotkanie</a><a href="<?php echo esc_url( home_url( '/kadra/' ) ); ?>" class="btn btn--ghost btn--lg">Poznaj kadrę</a></div>
     </div>
   </div>

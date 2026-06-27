@@ -666,7 +666,7 @@ body.js-intro.intro-active .brand__img { opacity: 0; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: #E8DDD3; padding: var(--s-6) 0 var(--s-3); margin-top: var(--s-6); }
-.site-footer h4 { color: #fff; margin-bottom: var(--s-2); font-size: 1.15rem; }
+.site-footer h2 { color: #fff; margin-bottom: var(--s-2); font-size: 1.15rem; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: var(--s-4); }
 .site-footer a { color: #E8DDD3; }
 .site-footer a:hover { color: var(--secondary); }

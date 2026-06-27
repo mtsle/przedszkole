@@ -18,8 +18,8 @@ $t = get_template_directory_uri();
   <div class="container reveal">
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'Kontakt i zapisy' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Porozmawiajmy o Twoim dziecku' ) ); ?></h1>
-    <p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Masz pytania lub chcesz zapisać dziecko? Wypełnij formularz albo zadzwoń — chętnie pomożemy.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Kontakt</p>
+    <p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Chcesz zapisać dziecko albo po prostu zapytać? Wypełnij formularz lub zadzwoń — odpowiemy na wszystkie pytania i bez zobowiązań zaprosimy na zwiedzanie przedszkola.' ) ); ?></p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 
@@ -158,37 +158,37 @@ $t = get_template_directory_uri();
       <div class="doc-cat card">
         <h3>Karta zgłoszeniowa</h3>
         <ul class="doc-list">
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/karta-informacyjna-o-dziecku.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Karta informacyjna o dziecku</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/karta-informacyjna-o-dziecku.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Karta informacyjna o dziecku</span><span class="doc-ext">PDF</span></a></li>
         </ul>
       </div>
 
       <div class="doc-cat card">
         <h3>WWR</h3>
         <ul class="doc-list">
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/wniosek-oswiadczenie-wwr.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Wniosek i oświadczenie – WWR</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/wniosek-oswiadczenie-wwr.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Wniosek i oświadczenie – WWR</span><span class="doc-ext">PDF</span></a></li>
         </ul>
       </div>
 
       <div class="doc-cat card">
         <h3>Regulamin przedszkola</h3>
         <ul class="doc-list">
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/regulamin-przedszkola.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Regulamin przedszkola</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/regulamin-przedszkola.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Regulamin przedszkola</span><span class="doc-ext">PDF</span></a></li>
         </ul>
       </div>
 
       <div class="doc-cat card">
         <h3>Statut</h3>
         <ul class="doc-list">
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/statut-przedszkola.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Statut Integracyjnego Przedszkola Niepublicznego „Czarodziejski Dworek"</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/statut-przedszkola.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Statut Integracyjnego Przedszkola Niepublicznego „Czarodziejski Dworek"</span><span class="doc-ext">PDF</span></a></li>
         </ul>
       </div>
 
       <div class="doc-cat card" style="grid-column:1 / -1">
         <h3>RODO</h3>
         <ul class="doc-list">
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/klauzula-informacyjna-rodo.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Klauzula informacyjna dla klientów Integracyjnego Przedszkola Niepublicznego „Czarodziejski Dworek"</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/klauzula-informacyjna-rodo.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Klauzula informacyjna dla klientów Integracyjnego Przedszkola Niepublicznego „Czarodziejski Dworek"</span><span class="doc-ext">PDF</span></a></li>
           <li><a class="doc-link" href="<?php echo esc_url( home_url( '/polityka-prywatnosci/' ) ); ?>"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg><span>Polityka prywatności – www.czarodziejski-dworek.pl</span><span class="doc-ext">Strona</span></a></li>
-          <li><a class="doc-link" href="<?php echo $t; ?>/dokumenty/polityka-ochrony-dzieci-2024.pdf" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Polityka oraz procedury ochrony dzieci przed krzywdzeniem (2024)</span><span class="doc-ext">PDF</span></a></li>
+          <li><a class="doc-link" href="<?php echo esc_url( $t . '/dokumenty/polityka-ochrony-dzieci-2024.pdf' ); ?>" target="_blank" rel="noopener" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h4"/></svg><span>Polityka oraz procedury ochrony dzieci przed krzywdzeniem (2024)</span><span class="doc-ext">PDF</span></a></li>
         </ul>
       </div>
 

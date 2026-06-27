@@ -18,8 +18,8 @@ $t = get_template_directory_uri();
   <div class="container reveal">
     <span class="eyebrow"><?php echo esc_html( dworek_field( 'page_eyebrow', 'Program' ) ); ?></span>
     <h1><?php echo esc_html( dworek_field( 'page_hero_title', 'Program, który rozwija i cieszy' ) ); ?></h1>
-    <p class="lead" style="margin:.6rem auto 0;max-width:62ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Od programu edukacyjnego, przez języki, muzykę i basen, po warsztaty oraz rozwój społeczny, emocjonalny i twórczy — każdego dnia dbamy o wszechstronny rozwój dziecka.' ) ); ?></p>
-    <p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Program</p>
+    <p class="lead" style="margin:.6rem auto 0;max-width:62ch"><?php echo esc_html( dworek_field( 'page_hero_lead', 'Języki, basen, muzyka, terapie i warsztaty — wszystko w cenie czesnego, bez ukrytych dopłat. Każdego dnia wspieramy rozwój poznawczy, społeczny i emocjonalny dziecka, realizując podstawę programową MEN.' ) ); ?></p>
+    <?php dworek_breadcrumbs(); ?>
   </div>
 </section>
 
@@ -223,7 +223,7 @@ $t = get_template_directory_uri();
   <div class="container">
     <div class="card reveal">
       <h2>Chcesz poznać szczegóły i zapisać dziecko?</h2>
-      <p style="margin-inline:auto">Skontaktuj się z nami — opowiemy o programie, dostępnych grupach i warunkach zapisu, a także zaprosimy na zwiedzanie przedszkola.</p>
+      <p style="margin-inline:auto">Skontaktuj się z nami — opowiemy o programie, dostępnych grupach i warunkach zapisu, a także zaprosimy na zwiedzanie przedszkola. Wizyta jest bezpłatna i bez zobowiązań.</p>
       <div class="btn-row"><a href="<?php echo esc_url( home_url( '/kontakt/' ) ); ?>" class="btn btn--primary btn--lg">Zapytaj o zapisy</a><a href="<?php echo esc_url( home_url( '/wsparcie/' ) ); ?>" class="btn btn--ghost btn--lg">WWR i terapia</a></div>
     </div>
   </div>

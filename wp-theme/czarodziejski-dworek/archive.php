@@ -19,7 +19,7 @@ get_header();
 			?>
 			<p class="lead" style="margin:.6rem auto 0;max-width:60ch"><?php echo wp_kses_post( $desc ); ?></p>
 		<?php endif; ?>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / <a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">Blog</a> / <?php echo esc_html( wp_strip_all_tags( get_the_archive_title() ) ); ?></p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

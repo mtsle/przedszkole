@@ -92,7 +92,7 @@ foreach ( $dw_cats_used as $cs => $label ) { // ewentualne pozostałe kategorie
 		<span class="eyebrow">Blog</span>
 		<h1>Co słychać w Dworku</h1>
 		<p class="lead" style="margin:.6rem auto 0;max-width:60ch">Aktualności, wydarzenia i wskazówki dla rodziców — wszystko, czym żyje nasze przedszkole, w jednym miejscu.</p>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Blog</p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 

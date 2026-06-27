@@ -4,9 +4,11 @@
   "preferredVersions": { "php": "8.3", "wp": "latest" },
   "phpExtensionBundles": ["kitchen-sink"],
   "steps": [
+    { "step": "setSiteLanguage", "language": "pl_PL" },
     { "step": "setSiteOptions", "options": { "permalink_structure": "/%postname%/", "blogname": "Czarodziejski Dworek" } },
     { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "advanced-custom-fields" } },
     { "step": "activateTheme", "themeFolderName": "czarodziejski-dworek" },
-    { "step": "runPHP", "code": "<?php require '/wordpress/wp-content/themes/czarodziejski-dworek/_import/seed-tresci.php'; require '/wordpress/wp-content/themes/czarodziejski-dworek/_import/seed-kadra.php';" }
+    { "step": "importWxr", "file": { "resource": "vfs", "path": "/wordpress/wp-content/themes/czarodziejski-dworek/_import/tresci-czarodziejski-dworek.xml" } },
+    { "step": "runPHP", "code": "<?php require_once '/wordpress/wp-load.php'; $f = get_page_by_path('strona-glowna'); $b = get_page_by_path('blog'); if ($f) { update_option('show_on_front','page'); update_option('page_on_front', $f->ID); } if ($b) { update_option('page_for_posts', $b->ID); } flush_rewrite_rules();" }
   ]
 }

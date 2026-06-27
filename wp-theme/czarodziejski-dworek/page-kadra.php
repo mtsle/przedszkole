@@ -30,8 +30,8 @@ $dw_mono_i    = 0;
 	<div class="container reveal">
 		<span class="eyebrow">Nasza kadra</span>
 		<h1>Ludzie, którym możesz zaufać</h1>
-		<p class="lead" style="margin:.6rem auto 0;max-width:60ch">Nasz zespół to wykwalifikowani nauczyciele, lektorzy i specjaliści, których łączy pasja do pracy z dziećmi.</p>
-		<p class="breadcrumb"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Start</a> / Kadra</p>
+		<p class="lead" style="margin:.6rem auto 0;max-width:64ch">Nasz zespół to wykwalifikowani nauczyciele i lektorzy oraz specjaliści na miejscu — logopeda, psycholog, terapeuta integracji sensorycznej i pedagog — których łączy pasja i wieloletnie doświadczenie w pracy z dziećmi.</p>
+		<?php dworek_breadcrumbs(); ?>
 	</div>
 </section>
 
