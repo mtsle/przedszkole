@@ -3,137 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nauka zdalna — strefa rodzica | Czarodziejski Dworek</title>
-  <meta name="description" content="Strefa nauki zdalnej przedszkola „Czarodziejski Dworek" — logowanie dla rodziców i dostęp do materiałów oraz zajęć online.">
+  <title>Zaloguj się — Czarodziejski Dworek</title>
+  <meta name="description" content="Logowanie do panelu WordPress przedszkola „Czarodziejski Dworek".">
   <meta name="robots" content="noindex, follow">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=29">
   <link rel="icon" href="img/logo.png" type="image/png">
-  <link rel="canonical" href="https://www.czarodziejski-dworek.pl/zdalne.html">
-  <meta name="theme-color" content="#F97316">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pl_PL">
-  <meta property="og:site_name" content="Czarodziejski Dworek">
-  <meta property="og:title" content="Nauka zdalna — strefa rodzica | Czarodziejski Dworek">
-  <meta property="og:description" content="Logowanie do strefy nauki zdalnej przedszkola „Czarodziejski Dworek".">
-  <meta property="og:url" content="https://www.czarodziejski-dworek.pl/zdalne.html">
-  <meta property="og:image" content="https://www.czarodziejski-dworek.pl/img/hero.webp">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f0f0f1">
+  <style>
+    /* Replika ekranu logowania WordPress (wp-login.php) */
+    * { box-sizing: border-box; }
+    html { background: #f0f0f1; }
+    body {
+      background: #f0f0f1;
+      color: #3c434a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      font-size: 13px;
+      line-height: 1.4;
+      margin: 0;
+      min-width: 0;
+      padding: 0;
+    }
+    a { color: #2271b1; text-decoration: none; }
+    a:hover { color: #135e96; }
+    a:focus { color: #043959; box-shadow: 0 0 0 2px #2271b1; outline: 2px solid transparent; }
+
+    #login {
+      width: 320px;
+      padding: 8% 0 0;
+      margin: auto;
+    }
+    #login h1 { text-align: center; }
+    #login h1 a {
+      display: block;
+      width: 88px;
+      height: 88px;
+      margin: 0 auto 25px;
+      padding: 0;
+      background-image: url("img/logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      outline: none;
+      overflow: hidden;
+    }
+
+    form {
+      margin-top: 20px;
+      margin-left: 0;
+      padding: 26px 24px;
+      font-weight: 400;
+      overflow: hidden;
+      background: #fff;
+      border: 1px solid #c3c4c7;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+    form .forgetmenot { font-weight: 400; float: left; margin-bottom: 0; }
+    label { color: #3c434a; font-size: 14px; }
+
+    input[type="text"],
+    input[type="password"] {
+      font-size: 24px;
+      line-height: 1.33333333;
+      width: 100%;
+      padding: 3px 5px;
+      margin: 2px 0 16px;
+      min-height: 40px;
+      max-height: none;
+      border: 1px solid #8c8f94;
+      background: #fff;
+      color: #2c3338;
+      border-radius: 4px;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #2271b1;
+      box-shadow: 0 0 0 1px #2271b1;
+      outline: 2px solid transparent;
+    }
+    input[type="checkbox"] {
+      height: 16px;
+      width: 16px;
+      margin: 0 4px 0 0;
+      vertical-align: middle;
+    }
+    .forgetmenot label { font-size: 13px; line-height: 1.9; }
+
+    .submit { clear: both; }
+    .button-primary {
+      float: right;
+      background: #2271b1;
+      border: 1px solid #2271b1;
+      color: #fff;
+      font-size: 13px;
+      line-height: 2.15384615;
+      min-height: 32px;
+      margin: 0;
+      padding: 0 12px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .button-primary:hover { background: #135e96; border-color: #135e96; }
+
+    #nav, #backtoblog {
+      font-size: 13px;
+      padding: 0;
+      margin: 24px 0 0;
+    }
+    #nav { text-align: left; }
+    #backtoblog { text-align: center; }
+    #nav a, #backtoblog a { color: #50575e; }
+    #nav a:hover, #backtoblog a:hover { color: #135e96; }
+
+    #login-message {
+      display: none;
+      border-left: 4px solid #d63638;
+      padding: 12px;
+      margin: 0 0 20px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      word-wrap: break-word;
+    }
+  </style>
 </head>
-<body>
-<a href="#main" class="btn btn--primary" style="position:absolute;left:-999px;top:0;z-index:2000" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Przejdź do treści</a>
-<header class="site-header">
-  <nav class="nav container" aria-label="Główna nawigacja">
-    <a href="index.html" class="brand" aria-label="Czarodziejski Dworek — strona główna">
-      <img src="img/logo.png" alt="Czarodziejski Dworek — przedszkole językowo-muzyczne" class="brand__img" width="160" height="107">
-    </a>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="index.html">Start</a></li>
-      <li><a href="o-nas.html">O nas</a></li>
-      <li><a href="oferta.html">Program</a></li>
-      <li><a href="kadra.html">Kadra</a></li>
-      <li><a href="wsparcie.html">WWR i terapia</a></li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="zdalne.html" aria-current="page">Zdalne</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
-      <li class="nav__cta"><a href="kontakt.html" class="btn btn--primary" style="color:#fff">Zapisz dziecko</a></li>
-    </ul>
-    <button class="nav__toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-  </nav>
-</header>
+<body class="login">
+  <div id="login">
+    <h1><a href="index.html">Czarodziejski Dworek</a></h1>
 
-<main id="main">
-<section class="page-hero">
-  <div class="container reveal">
-    <span class="eyebrow">Strefa rodzica</span>
-    <h1>Nauka zdalna</h1>
-    <p class="lead" style="margin:.6rem auto 0;max-width:60ch">Tutaj rodzice logują się do strefy nauki zdalnej — z dostępem do materiałów, zajęć online i bieżących informacji od wychowawców.</p>
-    <p class="breadcrumb"><a href="index.html">Start</a> / Zdalne</p>
-  </div>
-</section>
+    <div id="login-message" role="alert"></div>
 
-<section class="section">
-  <div class="container reveal" style="max-width:480px">
-    <div class="card">
-      <h2 style="margin-bottom:.4rem;text-align:center">Logowanie</h2>
-      <p style="color:var(--muted);margin-bottom:var(--s-3);text-align:center">Wpisz dane otrzymane od przedszkola.</p>
-      <form id="zdalne-login" novalidate>
-        <div class="field" style="margin-bottom:var(--s-3)">
-          <label for="login">Login lub e-mail <span class="req">*</span></label>
-          <input id="login" name="login" type="text" autocomplete="username" required placeholder="np. anna.kowalska">
-        </div>
-        <div class="field" style="margin-bottom:var(--s-3)">
-          <label for="haslo">Hasło <span class="req">*</span></label>
-          <input id="haslo" name="haslo" type="password" autocomplete="current-password" required placeholder="••••••••">
-        </div>
-        <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Zaloguj się</button>
-        <p id="zdalne-status" role="status" aria-live="polite" style="display:none;margin-top:var(--s-2);background:var(--cream-2);border:2px solid var(--primary-soft);border-radius:var(--r-md);padding:.9rem 1rem;color:var(--primary-dark);font-weight:600;text-align:center"></p>
-        <p class="form-note" style="margin-top:var(--s-2);text-align:center">Nie masz danych logowania? <a href="kontakt.html">Skontaktuj się z nami</a>.</p>
-      </form>
-    </div>
-  </div>
-</section>
+    <form name="loginform" id="loginform" method="post" novalidate>
+      <p>
+        <label for="user_login">Nazwa użytkownika lub adres e-mail</label>
+        <input type="text" name="log" id="user_login" autocomplete="username" autocapitalize="off" autocorrect="off" required>
+      </p>
+      <div class="user-pass-wrap">
+        <p>
+          <label for="user_pass">Hasło</label>
+          <input type="password" name="pwd" id="user_pass" autocomplete="current-password" required>
+        </p>
+      </div>
+      <p class="forgetmenot">
+        <input name="rememberme" type="checkbox" id="rememberme" value="forever">
+        <label for="rememberme">Zapamiętaj mnie</label>
+      </p>
+      <p class="submit">
+        <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Zaloguj się">
+      </p>
+    </form>
 
-<section class="section" style="padding-top:0">
-  <div class="container">
-    <div class="center reveal" style="margin-bottom:var(--s-4)">
-      <span class="eyebrow">Jak to działa</span>
-      <h2>Wszystko, czego potrzebujesz w jednym miejscu</h2>
-    </div>
-    <div class="features__grid">
-      <div class="card reveal">
-        <div class="card__icon">📚</div>
-        <h3>Materiały i karty pracy</h3>
-        <p>Pobierz karty pracy, piosenki i pomoce przygotowane przez naszych nauczycieli do zabawy i nauki w domu.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon">🎬</div>
-        <h3>Zajęcia online</h3>
-        <p>Dołącz do spotkań z wychowawcą oraz zajęć muzycznych i językowych prowadzonych na żywo.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon">📨</div>
-        <h3>Kontakt z wychowawcą</h3>
-        <p>Bieżące informacje o grupie, planie dnia i wydarzeniach — zawsze pod ręką dla rodzica.</p>
-      </div>
-    </div>
-    <p class="center" style="margin-top:var(--s-4)"><a href="kontakt.html" class="btn btn--ghost">Masz pytania? Napisz do nas →</a></p>
+    <p id="nav">
+      <a href="#" id="lostpassword">Nie pamiętasz hasła?</a>
+    </p>
+    <p id="backtoblog">
+      <a href="index.html">← Przejdź do Czarodziejski Dworek</a>
+    </p>
   </div>
-</section>
-</main>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <span class="brand footer-brand__logo"><img loading="lazy" decoding="async" src="img/logo.png" alt="Czarodziejski Dworek" width="150" height="100"></span>
-      <p>Niepubliczne przedszkole językowo-muzyczne na warszawskiej Woli. Od 2003 roku wspieramy wszechstronny rozwój każdego dziecka.</p>
-      <div class="social">
-        <a href="https://www.facebook.com/czarodziejskidworek/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h2.5l.5-3H14V9z"/></svg></a>
-        <a href="blog.html" aria-label="Blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></a>
-      </div>
-    </div>
-    <div><h4>Nawigacja</h4><ul class="footer-links"><li><a href="o-nas.html">O nas</a></li><li><a href="oferta.html">Program</a></li><li><a href="kadra.html">Kadra</a></li><li><a href="wsparcie.html">WWR i terapia</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="blog.html">Blog</a></li></ul></div>
-    <div><h4>W czesnym</h4><ul class="footer-links"><li><a href="oferta.html">Basen</a></li><li><a href="oferta.html">Język angielski i francuski</a></li><li><a href="oferta.html">Muzyka</a></li><li><a href="wsparcie.html">Logopedia</a></li><li><a href="wsparcie.html">Integracja sensoryczna</a></li></ul></div>
-    <div><h4>Kontakt</h4><ul class="footer-links"><li>ul. Górczewska 89, 01-401 Warszawa</li><li><a href="tel:+48690629501">690 629 501</a></li><li><a href="mailto:kontakt@czarodziejski-dworek.pl">kontakt@czarodziejski-dworek.pl</a></li><li>NIP: 524-246-20-37</li></ul></div>
-  </div>
-  <div class="container footer-bottom"><span>© <span data-year>2026</span> Integracyjne Przedszkole Niepubliczne Językowo-Muzyczne „Czarodziejski Dworek". Wszelkie prawa zastrzeżone.</span><span>Ewidencja nr 111/PN</span></div>
-</footer>
-<script src="js/main.js?v=12" defer></script>
-<script>
-  (function () {
-    var f = document.getElementById('zdalne-login');
-    if (!f) return;
-    f.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var s = document.getElementById('zdalne-status');
-      s.style.display = 'block';
-      s.textContent = 'Platforma nauki zdalnej zostanie uruchomiona wraz ze startem strony. W razie pytań prosimy o kontakt z przedszkolem.';
-    });
-  })();
-</script>
+  <script>
+    (function () {
+      var form = document.getElementById('loginform');
+      var msg = document.getElementById('login-message');
+      function showMsg(html) {
+        msg.innerHTML = html;
+        msg.style.display = 'block';
+        msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        showMsg('<strong>Uwaga:</strong> to jest podgląd strony. Prawdziwe logowanie do WordPressa zadziała po uruchomieniu strony na docelowym serwerze przedszkola.');
+      });
+      document.getElementById('lostpassword').addEventListener('click', function (e) {
+        e.preventDefault();
+        showMsg('Odzyskiwanie hasła będzie dostępne po uruchomieniu WordPressa na docelowym serwerze.');
+      });
+    })();
+  </script>
 </body>
 </html>
