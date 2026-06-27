@@ -1,50 +1,60 @@
 # Czarodziejski Dworek — strona przedszkola
 
-Strona WWW niepublicznego przedszkola językowo-muzycznego **„Czarodziejski Dworek"**
-(Warszawa, Wola). Repozytorium zawiera **dwie wersje** projektu:
+Strona internetowa Integracyjnego Przedszkola Niepublicznego Językowo-Muzycznego
+**„Czarodziejski Dworek"** (Warszawa, Wola). Repozytorium zawiera **produkcyjny motyw WordPress**
+(do wdrożenia na hostingu klienta) oraz źródłową, statyczną wersję HTML jako referencję.
 
-1. **Statyczna strona HTML** (w korzeniu repo) — pierwotny projekt w czystym HTML + CSS + JS, wielostronicowy.
-2. **Motyw WordPress** (`wp-theme/czarodziejski-dworek/`) — produkcyjny, klasyczny motyw PHP odwzorowujący
-   stronę **1:1**, w pełni edytowalny przez natywny panel `wp-admin`. To aktualny deliverable do wdrożenia u klienta.
+## 📂 Struktura repozytorium
+
+```
+.
+├─ motyw-wordpress/                 ← GŁÓWNY PRODUKT (do wdrożenia)
+│  ├─ czarodziejski-dworek/         ← motyw WordPress (kopiuje się do wp-content/themes/)
+│  │  ├─ *.php, css/, js/, img/     ← szablony + zasoby (wygląd 1:1 z HTML)
+│  │  ├─ inc/                       ← logika: ACF, CPT Kadra, formularz, SEO
+│  │  ├─ _import/                   ← import treści (WXR): wpisy + strony + Kadra
+│  │  └─ README.md                  ← INSTRUKCJA WDROŻENIA krok po kroku
+│  └─ narzedzia/                    ← podgląd lokalny (WordPress Playground)
+│     ├─ URUCHOM-WORDPRESS-LOKALNIE.bat
+│     └─ blueprint.json
+│
+└─ zrodlo-html/                     ← źródłowa statyczna wersja HTML (referencja)
+   └─ index.html, css/, js/, img/, dokumenty/ …
+```
+
+## 🚀 Wdrożenie (skrót)
+
+Pełna instrukcja: **[motyw-wordpress/czarodziejski-dworek/README.md](motyw-wordpress/czarodziejski-dworek/README.md)**
+
+1. Spakuj folder `motyw-wordpress/czarodziejski-dworek/` do ZIP (paczka motywu).
+2. WordPress: `Wygląd → Motywy → Dodaj nowy → Wyślij motyw` → aktywuj.
+3. Zainstaluj darmową wtyczkę **Advanced Custom Fields (ACF)**.
+4. `Narzędzia → Importuj → WordPress` → wskaż `_import/tresci-czarodziejski-dworek.xml`
+   (zaciągnie wpisy bloga, strony i kadrę).
+5. `Ustawienia → Czytanie`: strona główna = „Strona główna", strona wpisów = „Blog".
+   `Ustawienia → Bezpośrednie odnośniki` → „Nazwa wpisu".
+
+Cały CMS to **natywny WordPress** (`wp-admin` / `wp-login.php`) — bez własnych paneli logowania.
+
+## 🧩 Co potrafi motyw
+
+- Wygląd **1:1** z projektu (styl claymorphism), w pełni responsywny (mobile-first).
+- **Edytowalne z panelu:** wpisy bloga, **Kadra** (typ treści, 18 osób), nagłówki podstron i sekcja Hero (ACF).
+- **Blog** z wyróżnionym wpisem, filtrami kategorii i wyszukiwarką (dane z WordPressa).
+- **Formularz kontaktowy** z realną wysyłką e-mail (`wp_mail`, nonce + honeypot); adres odbiorcy w `Wygląd → Dostosuj`.
+- **SEO:** meta description, Open Graph, Twitter Cards, dane strukturalne JSON-LD
+  (Preschool/LocalBusiness, WebSite, BreadcrumbList, Article), breadcrumbs, canonical, sitemap.
+
+## 🖥️ Podgląd lokalny (opcjonalnie, dla developera)
+
+Wymaga Node.js. Dwuklik **`motyw-wordpress/narzedzia/URUCHOM-WORDPRESS-LOKALNIE.bat`**
+uruchamia prawdziwy WordPress (WordPress Playground) na `http://127.0.0.1:8881`
+(login `admin` / `password`). To wyłącznie środowisko testowe — na hostingu motyw działa na zwykłym PHP.
+
+## 🏷️ Wersje
+
+- **v1.0.0** — pierwsze produkcyjne wydanie motywu (patrz: *Releases / Tags*).
 
 ---
 
-## 1. Statyczna strona HTML (korzeń repo)
-
-Podstrony: `index.html` (główna), `o-nas.html`, `oferta.html`, `wsparcie.html`, `kadra.html`,
-`galeria.html`, `kontakt.html`, `polityka-prywatnosci.html` oraz wpisy bloga `blog-*.html`.
-
-```
-css/style.css   — wspólne style
-js/main.js      — wspólny skrypt (modale kadry, galeria, filtry bloga itp.)
-img/            — zdjęcia i grafiki
-dokumenty/      — pliki PDF do pobrania
-```
-
-**Uruchomienie:** otwórz `index.html` w przeglądarce — nie wymaga serwera ani budowania.
-
----
-
-## 2. Motyw WordPress (`wp-theme/czarodziejski-dworek/`)
-
-Klasyczny motyw PHP (bez Node/build). Cały CMS to natywny WordPress — bez własnych paneli i logowania.
-Treści edytowalne (wpisy, Kadra jako typ treści, sekcje Hero i nagłówki przez ACF), układ stały.
-Formularz kontaktowy wysyła e-mail natywnie przez `wp_mail()`.
-
-Pełna instrukcja wdrożenia dla klienta: **`wp-theme/czarodziejski-dworek/README.md`**.
-
-Podgląd lokalny (wymaga Node.js, bez instalacji WordPressa):
-```bash
-cd wp-theme
-npx @wp-playground/cli@latest start \
-  --mount=czarodziejski-dworek:/wordpress/wp-content/themes/czarodziejski-dworek \
-  --blueprint=blueprint.json
-```
-
-> Uwaga: gotowy ZIP motywu (`wp-theme/czarodziejski-dworek.zip`) to artefakt budowania i **nie jest
-> wersjonowany** (patrz `.gitignore`) — generuje się przez spakowanie folderu `czarodziejski-dworek`.
-
----
-
-## Dane kontaktowe placówki
-ul. Górczewska 89, 01-401 Warszawa (Wola) · tel. 690 629 501 · kontakt@czarodziejski-dworek.pl
+© Integracyjne Przedszkole Niepubliczne Językowo-Muzyczne „Czarodziejski Dworek". Ewidencja nr 111/PN.

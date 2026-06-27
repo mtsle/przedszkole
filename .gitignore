@@ -1,6 +1,6 @@
 # Artefakty budowania motywu (regenerowalne — nie wersjonujemy)
-wp-theme/*.zip
-wp-theme/czarodziejski-dworek.zip
+motyw-wordpress/*.zip
+motyw-wordpress/czarodziejski-dworek.zip
 
 # Lokalny WordPress Playground / zależności
 .wordpress-playground/
@@ -8,9 +8,10 @@ node_modules/
 
 # Robocze zrzuty ekranu i pobrane materiały
 _podglad-wp/
+docs/zrzuty/
 _pobrane/
 _backup_*/
-dokumenty/ssmobilne/
+zrodlo-html/dokumenty/ssmobilne/
 *-screenshot.png
 
 # Śmieci systemowe
