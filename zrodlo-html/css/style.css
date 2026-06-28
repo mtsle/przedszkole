@@ -34,8 +34,8 @@
   /* Text */
   --ink: #3A2A1E;        /* nagłówki, ciepły brąz-czerń */
   --body: #5B4B40;       /* tekst akapitów */
-  --muted: #796B5F;      /* podpisy */
-  --on-primary: #3A2A1E;
+  --muted: #796B5F;      /* podpisy (przyciemnione do WCAG AA 4.5:1 na kremowym) */
+  --on-primary: #3A2A1E;  /* ciemny tekst na pomarańczu = WCAG AA 4.9:1 (zachowuje żywy brand) */
 
   /* Radii */
   --r-sm: 12px;
@@ -75,7 +75,7 @@ body {
   color: var(--body);
   background: var(--cream);
   line-height: 1.7;
-  font-size: 17px;
+  font-size: 1.0625rem; /* =17px, ale rem → szanuje ustawienia czcionki w przeglądarce */
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -103,7 +103,7 @@ p { max-width: 64ch; text-wrap: pretty; }
 .eyebrow {
   display: inline-flex; align-items: center; gap: .5rem;
   font-family: 'Baloo 2', cursive; font-weight: 600;
-  color: #BD4709; text-transform: uppercase;
+  color: #BD4709; text-transform: uppercase; /* przyciemnione do WCAG AA na cream-2 */
   letter-spacing: .08em; font-size: .85rem;
   background: var(--cream-2); padding: .4rem 1rem; border-radius: var(--r-pill);
   border: 1.5px solid var(--primary-soft);
@@ -355,7 +355,7 @@ body.js-intro.intro-active .brand__img { opacity: 0; }
 /* stat pills — równa siatka 3 kolumn */
 .hero__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-2); margin-top: var(--s-4); max-width: 46ch; }
 .hero__stats .stat { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 1rem 1.1rem; box-shadow: var(--shadow-clay); min-width: 0; }
-.stat strong { display: block; font-family: 'Baloo 2', cursive; font-size: 1.9rem; color: var(--primary-dark); line-height: 1; }
+.stat strong { display: block; font-family: 'Baloo 2', cursive; font-size: clamp(1.45rem, 6.4vw, 1.9rem); color: var(--primary-dark); line-height: 1; }
 .stat span { display: block; margin-top: .35rem; font-size: .82rem; line-height: 1.3; color: var(--muted); }
 
 /* media: organic blob photo */
@@ -716,16 +716,17 @@ body.js-intro.intro-active .brand__img { opacity: 0; }
   .split, .split--reverse .split__media { grid-template-columns: 1fr; order: 0; }
   .split__media { order: -1; }
   .split__media img { position: static; height: auto; }
-  .cols-3, .cols-2 { grid-template-columns: 1fr; }
+  .cols-3, .cols-2 { grid-template-columns: repeat(2, 1fr); } /* tablet: 2 kolumny zamiast 1 (mniej pustki) */
   .band__grid { grid-template-columns: repeat(2,1fr); }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .form-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
-  body { font-size: 16px; }
+  body { font-size: 1rem; }
   .brand__img { height: 46px; }
   .section { padding: var(--s-6) 0; }
   .features__grid, .team-grid { grid-template-columns: 1fr; }
+  .cols-3, .cols-2 { grid-template-columns: 1fr; } /* telefon: 1 kolumna (tablet wyżej = 2) */
   .footer-grid { grid-template-columns: 1fr; }
   .hero__stats { gap: var(--s-3); }
   .band { padding: var(--s-4); }
