@@ -667,7 +667,7 @@ body.js-intro.intro-active .brand__img { opacity: 0; }
 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--ink); color: #E8DDD3; padding: var(--s-6) 0 var(--s-3); margin-top: var(--s-6); }
-.site-footer h4 { color: #fff; margin-bottom: var(--s-2); font-size: 1.15rem; }
+.site-footer h3 { color: #fff; margin-bottom: var(--s-2); font-size: 1.15rem; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: var(--s-4); }
 .site-footer a { color: #E8DDD3; }
 .site-footer a:hover { color: var(--secondary); }
@@ -898,7 +898,7 @@ body { background: var(--cream); }
 .prog-list li::before { content: ""; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--dot, var(--primary)); }
 
 /* aktualności / blog */
-.blog-card .date { font-family: 'Baloo 2', cursive; font-weight: 600; color: var(--primary-dark); font-size: .85rem; }
+.blog-card .date { font-family: 'Baloo 2', cursive; font-weight: 600; color: #9A3412; font-size: .85rem; }
 .blog-card h3 { margin: .35rem 0 .5rem; font-size: 1.18rem; }
 .blog-card a.more { font-family: 'Baloo 2', cursive; font-weight: 600; color: var(--accent); }
 
@@ -1064,7 +1064,7 @@ a.blog-card:focus-visible { outline: 3px solid var(--primary); outline-offset: 3
 .blog-featured__body .feat-label { display: inline-flex; align-items: center; gap: .4rem; align-self: flex-start; font-family: 'Baloo 2', cursive; font-weight: 700; font-size: .82rem; letter-spacing: .03em; text-transform: uppercase; color: var(--primary-dark); margin-bottom: .6rem; }
 .blog-featured__body .feat-label::before { content: ""; width: 18px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--primary), var(--amber)); }
 .blog-featured__body .tag { align-self: flex-start; margin-bottom: .6rem; }
-.blog-featured__body .date { font-family: 'Baloo 2', cursive; font-weight: 600; color: var(--primary-dark); font-size: .88rem; margin-bottom: .25rem; }
+.blog-featured__body .date { font-family: 'Baloo 2', cursive; font-weight: 600; color: #9A3412; font-size: .88rem; margin-bottom: .25rem; }
 .blog-featured__body h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); margin-bottom: .5rem; }
 .blog-featured__body p { color: var(--body); margin-bottom: var(--s-3); max-width: 52ch; }
 .blog-featured__body .more { font-family: 'Baloo 2', cursive; font-weight: 700; color: var(--accent); }
