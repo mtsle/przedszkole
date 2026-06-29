@@ -249,6 +249,7 @@ body.js-intro.intro-active .brand__img { opacity: 0; }
 /* ---------- Hero ---------- */
 .hero { position: relative; padding: var(--s-6) 0 calc(var(--s-7) + 40px); overflow: hidden; }
 .hero__bg { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+.hero__bg-img { display: none; }
 .hero__bg::before {
   content: ""; position: absolute; inset: 0;
   background:
@@ -1200,12 +1201,12 @@ select, input, textarea { max-width: 100%; }
   body.js-intro .intro { display: none !important; }
   body.js-intro.intro-active .brand__img { opacity: 1 !important; }
 
-  .hero__bg {
-    background-image:
-      linear-gradient(180deg, rgba(22,15,10,.46) 0%, rgba(22,15,10,.28) 40%, rgba(22,15,10,.60) 100%),
-      url('../img/real/program/muzyka-1-mobile.webp');
-    background-size: cover;
-    background-position: center;
+  /* LCP = prawdziwy <img> (szybszy niż tło CSS) + gradient jako nakładka */
+  .hero__bg-img { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+  .hero__bg { background-image: none; }
+  .hero__bg::after {
+    content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(180deg, rgba(22,15,10,.46) 0%, rgba(22,15,10,.28) 40%, rgba(22,15,10,.60) 100%);
   }
 
   /* tekst na zdjęciu — biały, czytelny */
