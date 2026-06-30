@@ -1,5 +1,5 @@
-@font-face{font-family:'Baloo2-fallback';src:local('Arial');size-adjust:90.5%}
-@font-face{font-family:'Nunito-fallback';src:local('Arial');size-adjust:92%}
+@font-face{font-family:'Baloo2-fallback';src:local('Arial'),local('Liberation Sans'),local('Roboto');size-adjust:90.5%;font-display:swap}
+@font-face{font-family:'Nunito-fallback';src:local('Arial'),local('Liberation Sans'),local('Roboto');size-adjust:92%;font-display:swap}
 /* =========================================================
    Czarodziejski Dworek — przedszkole językowo-muzyczne
    Styl: Claymorphism (miękkie 3D, ciepły, przyjazny dzieciom)
