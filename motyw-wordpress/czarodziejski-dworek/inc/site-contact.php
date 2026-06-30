@@ -36,6 +36,8 @@ function dworek_contact_defaults() {
 		'hours'      => 'Poniedziałek – Piątek: 7.00 – 18.00',
 		'facebook'   => 'https://www.facebook.com/czarodziejskidworek/',
 		'nip'        => '524-246-20-37',
+		'bank'       => '05 1050 1025 1000 0022 9076 5482',
+		'bank_name'  => 'ING Bank Śląski',
 	);
 }
 
@@ -59,6 +61,8 @@ function dworek_contact_info_customizer( $wp_customize ) {
 		'hours'      => array( 'Godziny otwarcia', 'text', 'sanitize_text_field' ),
 		'facebook'   => array( 'Adres Facebooka (URL)', 'url', 'esc_url_raw' ),
 		'nip'        => array( 'NIP', 'text', 'sanitize_text_field' ),
+		'bank'       => array( 'Numer konta bankowego', 'text', 'sanitize_text_field' ),
+		'bank_name'  => array( 'Nazwa banku', 'text', 'sanitize_text_field' ),
 	);
 	$defaults = dworek_contact_defaults();
 

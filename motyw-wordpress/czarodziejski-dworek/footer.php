@@ -46,6 +46,7 @@
 				<li><a href="tel:<?php echo esc_attr( dworek_contact( 'phone_link', '+48690629501' ) ); ?>"><?php echo esc_html( dworek_contact( 'phone', '690 629 501' ) ); ?></a></li>
 				<li><a href="mailto:<?php echo esc_attr( dworek_contact( 'email', 'kontakt@czarodziejski-dworek.pl' ) ); ?>"><?php echo esc_html( dworek_contact( 'email', 'kontakt@czarodziejski-dworek.pl' ) ); ?></a></li>
 				<li>NIP: <?php echo esc_html( dworek_contact( 'nip', '524-246-20-37' ) ); ?></li>
+				<li>Nr konta (<?php echo esc_html( dworek_contact( 'bank_name', 'ING Bank Śląski' ) ); ?>):<br><?php echo esc_html( dworek_contact( 'bank', '05 1050 1025 1000 0022 9076 5482' ) ); ?></li>
 			</ul>
 		</div>
 	</div>

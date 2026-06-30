@@ -103,6 +103,10 @@ $t = get_template_directory_uri();
         <div><strong>Telefon</strong><a href="tel:<?php echo esc_attr( dworek_contact( 'phone_link', '+48690629501' ) ); ?>"><?php echo esc_html( dworek_contact( 'phone', '690 629 501' ) ); ?></a></div>
       </div>
       <div class="info-card">
+        <span class="ic c-yellow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+        <div><strong>Numer konta</strong><?php echo esc_html( dworek_contact( 'bank', '05 1050 1025 1000 0022 9076 5482' ) ); ?><br><span style="color:var(--muted);font-size:.92em"><?php echo esc_html( dworek_contact( 'bank_name', 'ING Bank Śląski' ) ); ?></span></div>
+      </div>
+      <div class="info-card">
         <span class="ic c-sky" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
         <div><strong>E-mail</strong><a href="mailto:<?php echo esc_attr( dworek_contact( 'email', 'kontakt@czarodziejski-dworek.pl' ) ); ?>"><?php echo esc_html( dworek_contact( 'email', 'kontakt@czarodziejski-dworek.pl' ) ); ?></a></div>
       </div>
