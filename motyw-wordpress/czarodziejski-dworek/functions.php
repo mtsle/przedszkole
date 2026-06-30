@@ -336,6 +336,10 @@ require get_template_directory() . '/inc/contact-form.php';
 // breadcrumbs (mikrodane) + JSON-LD (WebSite, BreadcrumbList, Article).
 require get_template_directory() . '/inc/seo.php';
 
+// Bezpieczeństwo: nagłówki HTTP (CSP, HSTS, X-Frame-Options, Referrer-Policy,
+// Permissions-Policy…), wymuszenie HTTPS i utwardzenie WordPressa.
+require get_template_directory() . '/inc/security.php';
+
 
 /* =========================================================================
  * 5. DROBNE USPRAWNIENIA

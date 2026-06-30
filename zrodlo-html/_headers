@@ -1,0 +1,16 @@
+# Nagłówki bezpieczeństwa dla hostingów, które czytają plik _headers
+# (Cloudflare Pages, Netlify). GitHub Pages ten plik IGNORUJE — tam nagłówki
+# HTTP trzeba dołożyć przez Cloudflare (Transform Rules) — patrz ZABEZPIECZENIA.md.
+#
+# Jeśli przeniesiesz tę stronę na Cloudflare Pages albo Netlify, ten plik
+# automatycznie nałoży komplet nagłówków bez żadnej dodatkowej konfiguracji.
+
+/*
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()
+  Cross-Origin-Opener-Policy: same-origin-allow-popups
+  X-XSS-Protection: 0
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src https://www.google.com https://maps.google.com https://www.openstreetmap.org; frame-ancestors 'self'; form-action 'self'; manifest-src 'self'; upgrade-insecure-requests

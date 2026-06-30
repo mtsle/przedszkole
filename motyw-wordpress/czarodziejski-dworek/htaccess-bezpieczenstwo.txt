@@ -1,0 +1,105 @@
+###############################################################################
+#  ZABEZPIECZENIA SERWERA APACHE — Czarodziejski Dworek
+#
+#  Co to jest: gotowy zestaw reguł dla serwera Apache (najczęstszy na hostingach
+#  współdzielonych w Polsce: cyber_Folks, home.pl, nazwa.pl, LH.pl…).
+#
+#  Motyw i tak wysyła nagłówki bezpieczeństwa przez PHP (inc/security.php),
+#  więc te reguły są DODATKOWE / zapasowe. Warto je wgrać, bo działają nawet
+#  dla plików statycznych (obrazy, CSS) i są niezależne od PHP.
+#
+#  JAK UŻYĆ:
+#  1. Połącz się z hostingiem (panel plików lub FTP).
+#  2. W GŁÓWNYM folderze WordPressa znajdź plik  .htaccess
+#     (jest tam, gdzie wp-config.php; może być ukryty — włącz „pokaż ukryte").
+#  3. ZRÓB KOPIĘ tego pliku przed zmianą.
+#  4. Wklej poniższą zawartość na SAMĄ GÓRĘ, PRZED linią „# BEGIN WordPress".
+#  5. Zapisz i odśwież stronę. Jeśli coś przestanie działać — przywróć kopię.
+#
+#  UWAGA: jeśli używasz Cloudflare, nagłówki ustaw RÓWNIEŻ tam (Transform Rules)
+#  — szczegóły w pliku ZABEZPIECZENIA.md. Nadmiarowe nagłówki nie szkodzą.
+###############################################################################
+
+# ----------------------------------------------------------------------------
+#  1. NAGŁÓWKI BEZPIECZEŃSTWA
+# ----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Wymuszenie HTTPS na 2 lata (włącz DOPIERO gdy masz działający certyfikat SSL!)
+    Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+    # Przeglądarka nie zgaduje typu pliku (anty-MIME-sniffing)
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Anty-clickjacking — strona nie może być osadzona w ramce obcej domeny
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Ile danych o adresie wysyłać przy przejściu na inną stronę
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Wyłączenie zbędnych API przeglądarki (kamera, mikrofon, lokalizacja…)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=(), interest-cohort=()"
+
+    # Izolacja okna otwierającego (ochrona przed tabnabbingiem)
+    Header always set Cross-Origin-Opener-Policy "same-origin-allow-popups"
+
+    # Stary filtr XSS wyłączony (CSP go zastępuje, jego heurystyka bywała groźna)
+    Header always set X-XSS-Protection "0"
+
+    # Content-Security-Policy — dopuszcza Google Fonts, mapy (Google/OSM) oraz
+    # style/skrypty inline używane przez motyw. Jedna linia (bez łamania!).
+    Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com https://www.openstreetmap.org https://www.youtube.com https://www.youtube-nocookie.com; frame-ancestors 'self'; form-action 'self'; manifest-src 'self'; upgrade-insecure-requests"
+
+    # Usuń nagłówki zdradzające oprogramowanie serwera
+    Header unset X-Powered-By
+    Header unset X-Pingback
+</IfModule>
+
+# ----------------------------------------------------------------------------
+#  2. WYMUSZENIE HTTPS (przekierowanie http -> https)
+#     Włącz dopiero gdy masz certyfikat SSL. Cloudflare robi to lepiej —
+#     jeśli używasz Cloudflare, ten blok możesz pominąć.
+# ----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ----------------------------------------------------------------------------
+#  3. UTWARDZENIE WORDPRESSA
+# ----------------------------------------------------------------------------
+# Zablokuj listowanie zawartości katalogów (np. /wp-content/uploads/)
+Options -Indexes
+
+# Chroń wp-config.php (najważniejszy plik — hasła do bazy)
+<Files wp-config.php>
+    Require all denied
+</Files>
+
+# Chroń plik .htaccess
+<Files .htaccess>
+    Require all denied
+</Files>
+
+# Zablokuj XML-RPC (częsty cel ataków brute-force / wzmacniacz DDoS)
+<Files xmlrpc.php>
+    Require all denied
+</Files>
+
+# Zablokuj dostęp do plików konfiguracyjnych i kopii
+<FilesMatch "(^\.|wp-config\.php|readme\.html|license\.txt|\.(bak|config|sql|ini|log|sh|inc|swp|dist)$)">
+    Require all denied
+</FilesMatch>
+
+# Wyłącz wykonywanie PHP w katalogu przesłanych plików (gdyby ktoś wgrał shell)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^wp-content/uploads/.*\.(php|php5|php7|phtml|pht)$ - [F,L]
+</IfModule>
+
+# Zablokuj enumerację użytkowników przez ?author=N
+<IfModule mod_rewrite.c>
+    RewriteCond %{QUERY_STRING} (^|&)author=\d+ [NC]
+    RewriteRule ^$ - [F,L]
+</IfModule>
